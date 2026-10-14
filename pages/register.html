@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create VIP Client Account | Aurelle Aesthetics</title>
+  <meta name="description" content="Register for an Aurelle Aesthetics client account to access exclusive treatment perks, online appointment management, and bespoke skincare protocols.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/themes.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body class="auth-page bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Shared Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content" class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="w-full max-w-lg space-y-8">
+      
+      <!-- Card Container -->
+      <div class="card-luxury p-8 sm:p-10 shadow-luxury bg-white dark:bg-aurelle-darkcard relative">
+        
+        <!-- Header & Logo -->
+        <div class="text-center space-y-2">
+          <div class="w-12 h-12 rounded-full border border-aurelle-gold flex items-center justify-center mx-auto bg-stone-50 dark:bg-stone-800">
+            <span class="font-serif text-xl font-bold text-aurelle-charcoal dark:text-aurelle-gold">A</span>
+          </div>
+          <h1 class="font-serif text-2xl sm:text-3xl font-normal text-aurelle-charcoal dark:text-white">Create Client Account</h1>
+          <p class="text-xs text-stone-500 dark:text-stone-400 font-light">Join the Aurelle VIP aesthetic sanctuary (Demo Portal).</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="demo-register-form" novalidate class="mt-6 space-y-4">
+          <div>
+            <label for="register-name" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+              Full Legal Name <span class="text-rose-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="register-name" 
+              required 
+              placeholder="e.g. Genevieve Sterling"
+              class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+            >
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="register-email" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                Email Address <span class="text-rose-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                id="register-email" 
+                required 
+                placeholder="name@example.com"
+                class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+              >
+            </div>
+
+            <div>
+              <label for="register-phone" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                Phone Number <span class="text-rose-500">*</span>
+              </label>
+              <input 
+                type="tel" 
+                id="register-phone" 
+                required 
+                placeholder="(555) 000-0000"
+                class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="register-password" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                Password <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <input 
+                  type="password" 
+                  id="register-password" 
+                  required 
+                  placeholder="Min. 8 characters"
+                  class="w-full px-4 py-2.5 pr-10 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+                <button type="button" class="toggle-password-visibility absolute inset-y-0 right-0 pr-3 flex items-center text-stone-400 hover:text-stone-600 dark:hover:text-stone-200" aria-label="Toggle password visibility">
+                  <svg class="w-4 h-4 eye-open" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                  <svg class="w-4 h-4 eye-closed hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label for="register-confirm-password" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                Confirm Password <span class="text-rose-500">*</span>
+              </label>
+              <div class="relative">
+                <input 
+                  type="password" 
+                  id="register-confirm-password" 
+                  required 
+                  placeholder="Re-enter password"
+                  class="w-full px-4 py-2.5 pr-10 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-2.5 pt-3">
+            <input type="checkbox" id="register-terms" required class="mt-1 rounded text-aurelle-gold focus:ring-aurelle-gold">
+            <label for="register-terms" class="text-xs text-stone-500 dark:text-stone-400 font-light leading-snug">
+              I agree to the demonstration terms of service and acknowledge that this client portal uses mock session storage.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary w-full text-xs py-3.5 tracking-widest uppercase shadow-md mt-4">
+            Complete VIP Registration
+          </button>
+        </form>
+
+        <div class="mt-6 pt-6 border-t border-stone-100 dark:border-aurelle-darkborder text-center text-xs text-stone-500 dark:text-stone-400">
+          Already have an Aurelle account?
+          <a href="./login.html" class="font-semibold text-aurelle-gold hover:underline ml-1">Sign in here</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/components.js?v=mobile-nav-fix-5"></script>
+  <script src="../js/navigation.js?v=mobile-nav-fix-6"></script>
+  <script src="../js/auth-demo.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Aurelle Aesthetics Med Spa</title>
+  <meta name="description" content="Reserve your bespoke aesthetic appointment with our master physicians and specialists. Seamless 5-step online booking.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/themes.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body class="bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased">
+
+  <!-- Shared Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content" class="min-h-screen py-10 sm:py-14">
+    <div id="booking-wizard-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Stepper Header -->
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <span class="section-subtitle">Online Concierge</span>
+        <h1 class="section-title">Schedule Your Aesthetic Visit</h1>
+        <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-light mt-2">
+          Demo Booking Portal &bull; Availability and appointment slots are simulated for demonstration.
+        </p>
+
+        <!-- 5-Step Stepper Progress Bar -->
+        <div class="mt-8 flex items-center justify-between max-w-xl mx-auto px-2" aria-label="Booking Progress Steps">
+          
+          <div class="step-item active" data-step="1">
+            <div class="step-circle">1</div>
+            <span class="step-label text-[11px] font-medium mt-2 text-stone-600 dark:text-stone-300">Service</span>
+          </div>
+
+          <div class="step-item" data-step="2">
+            <div class="step-circle">2</div>
+            <span class="step-label text-[11px] font-medium mt-2 text-stone-600 dark:text-stone-300">Specialist</span>
+          </div>
+
+          <div class="step-item" data-step="3">
+            <div class="step-circle">3</div>
+            <span class="step-label text-[11px] font-medium mt-2 text-stone-600 dark:text-stone-300">Date & Time</span>
+          </div>
+
+          <div class="step-item" data-step="4">
+            <div class="step-circle">4</div>
+            <span class="step-label text-[11px] font-medium mt-2 text-stone-600 dark:text-stone-300">Contact</span>
+          </div>
+
+          <div class="step-item" data-step="5">
+            <div class="step-circle">5</div>
+            <span class="step-label text-[11px] font-medium mt-2 text-stone-600 dark:text-stone-300">Confirm</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Main Booking Wizard Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        
+        <!-- Left 8 Columns: Step Panels -->
+        <div class="lg:col-span-8 card-luxury p-6 sm:p-10 shadow-luxury min-h-[480px] flex flex-col justify-between">
+          
+          <div>
+            <!-- STEP 1: SELECT TREATMENT -->
+            <div class="wizard-step-pane" data-step-index="1">
+              <div class="mb-6">
+                <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Step 1: Choose Your Treatment</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Select the procedure you wish to book. Pricing includes comprehensive assessment.</p>
+              </div>
+
+              <div id="step-1-treatments-list" class="space-y-3">
+                <!-- Rendered dynamically by js/booking.js -->
+              </div>
+            </div>
+
+            <!-- STEP 2: SELECT PROVIDER -->
+            <div class="wizard-step-pane hidden" data-step-index="2">
+              <div class="mb-6">
+                <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Step 2: Choose Your Aesthetic Specialist</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Select the physician or aesthetic specialist you prefer for this session.</p>
+              </div>
+
+              <div id="step-2-providers-list" class="space-y-3">
+                <!-- Rendered dynamically by js/booking.js -->
+              </div>
+            </div>
+
+            <!-- STEP 3: SELECT DATE & TIME -->
+            <div class="wizard-step-pane hidden" data-step-index="3">
+              <div class="mb-6">
+                <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Step 3: Select Date & Available Time</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Please select an upcoming date and one of our available sample appointment windows.</p>
+              </div>
+
+              <div class="space-y-6">
+                <div>
+                  <label for="booking-date-input" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-2">
+                    Appointment Date (Must be today or future date)
+                  </label>
+                  <input 
+                    type="date" 
+                    id="booking-date-input" 
+                    required 
+                    class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                  >
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-2">
+                    Available Sample Time Slots
+                  </label>
+                  <div id="time-slots-container" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    <!-- Rendered dynamically by js/booking.js -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: CLIENT INFORMATION -->
+            <div class="wizard-step-pane hidden" data-step-index="4">
+              <div class="mb-6">
+                <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Step 4: Client Contact Information</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Provide your contact details so our clinic concierge can confirm your appointment.</p>
+              </div>
+
+              <div class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="booking-client-name" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                      Full Legal Name <span class="text-rose-500">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="booking-client-name" 
+                      required 
+                      placeholder="e.g. Eleanor Sterling" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                    >
+                  </div>
+
+                  <div>
+                    <label for="booking-client-email" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                      Email Address <span class="text-rose-500">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="booking-client-email" 
+                      required 
+                      placeholder="eleanor@example.com" 
+                      class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                    >
+                  </div>
+                </div>
+
+                <div>
+                  <label for="booking-client-phone" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                    Mobile Phone Number <span class="text-rose-500">*</span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="booking-client-phone" 
+                    required 
+                    placeholder="(555) 382-9912" 
+                    class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                  >
+                </div>
+
+                <div>
+                  <label for="booking-client-notes" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                    Special Notes, Concerns, or Prior Injectable History
+                  </label>
+                  <textarea 
+                    id="booking-client-notes" 
+                    rows="3" 
+                    placeholder="E.g., first time trying Botox, interested in subtle lip hydration, event in 3 weeks..."
+                    class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5: REVIEW & CONFIRM -->
+            <div class="wizard-step-pane hidden" data-step-index="5">
+              <div class="mb-6">
+                <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Step 5: Review & Confirm Booking</h3>
+                <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Please review your appointment summary before finalizing your reservation.</p>
+              </div>
+
+              <div id="step-5-review-container">
+                <!-- Rendered dynamically by js/booking.js -->
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-stone-100 dark:border-aurelle-darkborder flex items-start gap-2.5">
+                <input type="checkbox" id="booking-terms-check" checked class="mt-1 rounded text-aurelle-gold focus:ring-aurelle-gold">
+                <label for="booking-terms-check" class="text-xs text-stone-500 dark:text-stone-400 font-light leading-snug">
+                  I understand this is a demonstration booking and agree to the Aurelle Aesthetics 48-hour rescheduling protocol.
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Action Navigation Buttons -->
+          <div class="mt-10 pt-6 border-t border-stone-100 dark:border-aurelle-darkborder flex items-center justify-between">
+            <button 
+              type="button" 
+              id="wizard-prev-btn" 
+              class="hidden px-6 py-2.5 text-xs font-semibold tracking-wider uppercase rounded-full border border-stone-300 dark:border-stone-700 hover:border-aurelle-gold text-aurelle-charcoal dark:text-stone-200 transition-colors"
+            >
+              &larr; Previous Step
+            </button>
+
+            <div class="ml-auto">
+              <button 
+                type="button" 
+                id="wizard-next-btn" 
+                class="btn-primary text-xs py-3 px-8 shadow-md"
+              >
+                Continue &rarr;
+              </button>
+              
+              <button 
+                type="button" 
+                id="wizard-submit-btn" 
+                class="btn-gold hidden text-xs py-3 px-8 shadow-lg font-bold"
+              >
+                Confirm & Book Appointment
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right 4 Columns: Sticky Summary Sidebar -->
+        <div class="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
+          <div class="card-luxury p-6 sm:p-8 shadow-luxury space-y-6">
+            
+            <div class="pb-4 border-b border-stone-100 dark:border-aurelle-darkborder">
+              <span class="text-xs font-semibold uppercase tracking-widest text-aurelle-gold">Booking Summary</span>
+              <h3 id="summary-treatment-name" class="font-serif text-xl font-medium text-aurelle-charcoal dark:text-white mt-1">
+                Select Treatment
+              </h3>
+              <p id="summary-treatment-duration" class="text-xs text-stone-500 dark:text-stone-400">â± 30 mins</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-stone-600 dark:text-stone-300 font-light">
+              <div class="flex justify-between py-1 border-b border-stone-100/60 dark:border-stone-800">
+                <span class="text-stone-400">Specialist:</span>
+                <span id="summary-provider-name" class="font-medium text-aurelle-charcoal dark:text-white">Dr. Elena Vance, MD</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-stone-100/60 dark:border-stone-800">
+                <span class="text-stone-400">Date & Time:</span>
+                <span id="summary-datetime" class="font-medium text-aurelle-charcoal dark:text-white">Select Date</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-stone-100/60 dark:border-stone-800">
+                <span class="text-stone-400">Est. Treatment:</span>
+                <span id="summary-treatment-price" class="font-medium text-aurelle-charcoal dark:text-white">â‚¹350</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex items-baseline justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300">Total Investment</span>
+              <span id="summary-total-price" class="font-serif text-2xl font-bold text-aurelle-charcoal dark:text-aurelle-gold">â‚¹350</span>
+            </div>
+
+            <p class="text-[10px] text-stone-400 text-center">
+              Payment is processed securely in clinic after your session.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Success Confirmation Modal -->
+  <div id="booking-success-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="modal-dialog card-luxury w-full max-w-lg p-8 bg-white dark:bg-aurelle-darkcard text-center space-y-6">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto text-2xl">
+        âœ“
+      </div>
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-widest text-aurelle-gold">Reservation Confirmed (Demo)</span>
+        <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white mt-1">We Look Forward to Seeing You</h3>
+        <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Your appointment reference number is:</p>
+        <p id="confirm-modal-ref" class="font-mono text-base font-bold text-aurelle-charcoal dark:text-aurelle-gold mt-1">AUR-2026-0000</p>
+      </div>
+
+      <div class="p-4 rounded-xl bg-stone-50 dark:bg-stone-900/60 text-xs text-stone-600 dark:text-stone-300 space-y-1 text-left">
+        <p><span class="text-stone-400">Treatment:</span> <span id="confirm-modal-treatment" class="font-medium text-aurelle-charcoal dark:text-white">Botox</span></p>
+        <p><span class="text-stone-400">Specialist:</span> <span id="confirm-modal-provider" class="font-medium text-aurelle-charcoal dark:text-white">Dr. Elena Vance</span></p>
+        <p><span class="text-stone-400">Date/Time:</span> <span id="confirm-modal-datetime" class="font-medium text-aurelle-charcoal dark:text-white">Oct 24 at 11:00 AM</span></p>
+      </div>
+
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="./dashboard.html" class="btn-primary text-xs py-2.5 px-6">View in Client Portal</a>
+        <a href="../index.html" class="btn-secondary text-xs py-2.5 px-6">Return to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/components.js?v=mobile-nav-fix-5"></script>
+  <script src="../js/navigation.js?v=mobile-nav-fix-6"></script>
+  <script src="../js/booking.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

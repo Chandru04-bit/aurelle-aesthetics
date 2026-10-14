@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal & Dashboard | Aurelle Aesthetics</title>
+  <meta name="description" content="Manage your upcoming med spa visits, reschedule appointments, review treatment packages, and access your custom skincare routine.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/themes.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body class="dashboard-page bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased">
+
+  <!-- Shared Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content" class="min-h-screen py-10 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Dashboard User Banner -->
+      <div class="dashboard-user-banner card-luxury p-6 sm:p-8 mb-10 bg-white dark:bg-aurelle-darkcard shadow-soft flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div class="dashboard-user-profile flex items-center gap-4">
+          <div class="w-16 h-16 rounded-full border-2 border-aurelle-gold overflow-hidden bg-stone-100 dark:bg-stone-800 shrink-0">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Client Avatar" class="w-full h-full object-cover">
+          </div>
+          <div class="dashboard-user-details">
+            <div class="dashboard-user-heading flex items-center gap-2">
+              <h1 class="font-serif text-2xl sm:text-3xl font-normal text-aurelle-charcoal dark:text-white">
+                Welcome, <span id="dash-user-name">Eleanor Sterling</span>
+              </h1>
+              <span id="dash-user-tier" class="badge-pill bg-aurelle-gold text-white text-[10px]">
+                Aurelle Elite VIP
+              </span>
+            </div>
+            <p id="dash-user-email" class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1 break-all">demo@example.com</p>
+            <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-0.5">
+              Client Portal &bull; Medical Records & Booking Hub (Demo)
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="dashboard-quick-stats flex items-center gap-6 pt-4 lg:pt-0 border-t lg:border-t-0 border-stone-100 dark:border-aurelle-darkborder">
+          <div class="text-center">
+            <span id="dash-stat-upcoming" class="font-serif text-xl font-bold text-aurelle-charcoal dark:text-aurelle-gold block">2</span>
+            <span class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">Upcoming</span>
+          </div>
+          <div class="w-px h-8 bg-stone-200 dark:bg-stone-800"></div>
+          <div class="text-center">
+            <span id="dash-stat-packages" class="font-serif text-xl font-bold text-aurelle-charcoal dark:text-aurelle-gold block">2</span>
+            <span class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">Packages</span>
+          </div>
+          <div class="w-px h-8 bg-stone-200 dark:bg-stone-800"></div>
+          <div class="text-center">
+            <span id="dash-user-points" class="font-serif text-xl font-bold text-aurelle-charcoal dark:text-aurelle-gold block">1,250 Pts</span>
+            <span class="text-[10px] uppercase font-bold text-stone-400 tracking-wider">VIP Points</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabbed Dashboard Navigation -->
+      <div class="dashboard-tabs border-b border-stone-200 dark:border-aurelle-darkborder mb-8 overflow-x-auto flex gap-6 text-sm font-medium">
+        <button type="button" class="dashboard-tab-btn flex-shrink-0 pb-3 border-b-2 border-aurelle-gold text-aurelle-charcoal dark:text-aurelle-gold font-semibold whitespace-nowrap transition-colors" data-tab="appointments">
+          ðŸ“… Appointments & History
+        </button>
+        <button type="button" class="dashboard-tab-btn flex-shrink-0 pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 whitespace-nowrap transition-colors" data-tab="packages">
+          ðŸŽ My Treatment Packages
+        </button>
+        <button type="button" class="dashboard-tab-btn flex-shrink-0 pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 whitespace-nowrap transition-colors" data-tab="skincare">
+          ðŸ§´ Tailored Skincare Regimen
+        </button>
+        <button type="button" class="dashboard-tab-btn flex-shrink-0 pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 whitespace-nowrap transition-colors" data-tab="notifications">
+          ðŸ”” Notifications & Updates
+        </button>
+        <button type="button" class="dashboard-tab-btn flex-shrink-0 pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 whitespace-nowrap transition-colors" data-tab="profile">
+          âš™ï¸ Profile & Settings
+        </button>
+      </div>
+
+      <!-- TAB 1: APPOINTMENTS & HISTORY -->
+      <div id="tab-appointments" class="dashboard-tab-pane space-y-10">
+        <!-- Upcoming Visits -->
+        <div>
+          <div class="dashboard-section-heading flex items-center justify-between mb-4">
+            <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Upcoming Confirmed Visits</h3>
+            <a href="./booking.html" class="btn-primary text-xs py-2 px-4 shadow-none">
+              + Book New Visit
+            </a>
+          </div>
+
+          <div id="dash-upcoming-list" class="space-y-4">
+            <!-- Rendered by js/dashboard.js -->
+          </div>
+
+          <div id="dash-upcoming-empty" class="hidden text-center py-12 card-luxury p-8">
+            <p class="text-xs text-stone-500 font-light">You have no upcoming appointments scheduled.</p>
+            <a href="./booking.html" class="btn-primary text-xs py-2 px-5 mt-3 inline-block">Schedule a Treatment</a>
+          </div>
+        </div>
+
+        <!-- Treatment History -->
+        <div>
+          <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white mb-4">Past Procedure History</h3>
+          <div id="dash-past-list" class="space-y-3">
+            <!-- Rendered by js/dashboard.js -->
+          </div>
+
+          <div id="dash-past-empty" class="hidden text-center py-8 text-xs text-stone-400">
+            No completed history recorded yet.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: PACKAGES & SESSIONS -->
+      <div id="tab-packages" class="dashboard-tab-pane hidden space-y-6">
+        <div class="dashboard-section-heading flex items-center justify-between">
+          <div>
+            <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Active Treatment Packages</h3>
+            <p class="text-xs text-stone-500 font-light mt-0.5">Track remaining sessions and bundle redemption.</p>
+          </div>
+          <a href="./booking.html" class="btn-secondary text-xs py-2 px-4">
+            Browse Package Deals
+          </a>
+        </div>
+
+        <div id="dash-packages-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Rendered by js/dashboard.js -->
+        </div>
+      </div>
+
+      <!-- TAB 3: SKINCARE REGIMEN -->
+      <div id="tab-skincare" class="dashboard-tab-pane hidden space-y-8">
+        <div>
+          <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Your Custom Skincare Protocol</h3>
+          <p id="routine-provider-notes" class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">
+            Physician curated recommendations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- AM Routine -->
+          <div class="card-luxury p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2 pb-3 border-b border-stone-100 dark:border-aurelle-darkborder">
+              <span class="text-xl">â˜€ï¸</span>
+              <div>
+                <h4 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Morning Routine (AM)</h4>
+                <p class="text-[11px] text-stone-400">Focus: Protection, Hydration & Antioxidants</p>
+              </div>
+            </div>
+            <ul id="routine-morning-steps" class="space-y-4 pt-2">
+              <!-- Rendered by js/dashboard.js -->
+            </ul>
+          </div>
+
+          <!-- PM Routine -->
+          <div class="card-luxury p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2 pb-3 border-b border-stone-100 dark:border-aurelle-darkborder">
+              <span class="text-xl">ðŸŒ™</span>
+              <div>
+                <h4 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Evening Routine (PM)</h4>
+                <p class="text-[11px] text-stone-400">Focus: Cellular Turnover & Barrier Repair</p>
+              </div>
+            </div>
+            <ul id="routine-evening-steps" class="space-y-4 pt-2">
+              <!-- Rendered by js/dashboard.js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: NOTIFICATIONS -->
+      <div id="tab-notifications" class="dashboard-tab-pane hidden space-y-6">
+        <div class="dashboard-section-heading flex items-center justify-between">
+          <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Inbox & Appointment Alerts</h3>
+          <button type="button" id="mark-all-read-btn" class="text-xs text-aurelle-gold hover:underline font-medium">
+            Mark all as read
+          </button>
+        </div>
+
+        <div id="dash-notifications-list" class="space-y-3">
+          <!-- Rendered by js/dashboard.js -->
+        </div>
+      </div>
+
+      <!-- TAB 5: PROFILE SETTINGS -->
+      <div id="tab-profile" class="dashboard-tab-pane hidden space-y-8">
+        <div class="max-w-2xl card-luxury p-6 sm:p-10 space-y-6">
+          <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Client Information & Preferences</h3>
+          
+          <form id="dash-profile-form" class="space-y-4">
+            <div>
+              <label for="profile-name" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                Full Legal Name
+              </label>
+              <input 
+                type="text" 
+                id="profile-name" 
+                required 
+                class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+              >
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="profile-email" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                  Email Address
+                </label>
+                <input 
+                  type="email" 
+                  id="profile-email" 
+                  required 
+                  class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+              </div>
+
+              <div>
+                <label for="profile-phone" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+                  Phone Number
+                </label>
+                <input 
+                  type="tel" 
+                  id="profile-phone" 
+                  required 
+                  class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+              </div>
+            </div>
+
+            <div class="pt-4 flex items-center justify-between border-t border-stone-100 dark:border-aurelle-darkborder">
+              <button type="submit" class="btn-primary text-xs py-2.5 px-6">
+                Save Profile Changes
+              </button>
+              <button type="button" id="dash-logout-btn" class="text-xs font-semibold text-rose-600 dark:text-rose-400 hover:underline">
+                Sign Out of Portal
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RESCHEDULE APPOINTMENT MODAL -->
+  <div id="reschedule-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="modal-dialog card-luxury w-full max-w-md p-6 sm:p-8 bg-white dark:bg-aurelle-darkcard space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-stone-100 dark:border-aurelle-darkborder">
+        <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Reschedule Visit</h3>
+        <button type="button" class="text-stone-400 hover:text-stone-800 dark:hover:text-white" data-modal-close aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="reschedule-submit-form" class="space-y-4">
+        <div>
+          <label for="reschedule-date-input" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+            New Appointment Date
+          </label>
+          <input 
+            type="date" 
+            id="reschedule-date-input" 
+            required 
+            class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white"
+          >
+        </div>
+
+        <div>
+          <label for="reschedule-time-input" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+            Preferred Time Slot
+          </label>
+          <select 
+            id="reschedule-time-input" 
+            class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white"
+          >
+            <option value="09:30 AM">09:30 AM (Morning)</option>
+            <option value="11:00 AM">11:00 AM (Morning)</option>
+            <option value="01:30 PM">01:30 PM (Afternoon)</option>
+            <option value="03:00 PM">03:00 PM (Afternoon)</option>
+            <option value="04:45 PM">04:45 PM (Afternoon)</option>
+            <option value="06:00 PM">06:00 PM (Evening)</option>
+          </select>
+        </div>
+
+        <div class="pt-4 flex items-center justify-end gap-3">
+          <button type="button" class="btn-secondary text-xs py-2 px-4" data-modal-close>Cancel</button>
+          <button type="submit" class="btn-primary text-xs py-2 px-5">Confirm New Date</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CANCEL APPOINTMENT MODAL -->
+  <div id="cancel-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="modal-dialog card-luxury w-full max-w-md p-6 sm:p-8 bg-white dark:bg-aurelle-darkcard space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-stone-100 dark:border-aurelle-darkborder">
+        <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Cancel Appointment</h3>
+        <button type="button" class="text-stone-400 hover:text-stone-800 dark:hover:text-white" data-modal-close aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="cancel-confirm-form" class="space-y-4">
+        <p class="text-xs text-stone-600 dark:text-stone-300 font-light">
+          Are you sure you wish to cancel this appointment? We kindly request 48 hours notice for cancellations.
+        </p>
+
+        <div>
+          <label for="cancel-reason-input" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1">
+            Reason for Cancellation (Optional)
+          </label>
+          <select 
+            id="cancel-reason-input" 
+            class="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white"
+          >
+            <option value="Schedule conflict">Schedule conflict</option>
+            <option value="Need to change treatment">Need to change treatment</option>
+            <option value="Illness or unexpected event">Illness or unexpected event</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="pt-4 flex items-center justify-end gap-3">
+          <button type="button" class="btn-secondary text-xs py-2 px-4" data-modal-close>Keep Appointment</button>
+          <button type="submit" class="px-5 py-2 text-xs font-semibold rounded-full bg-rose-600 text-white hover:bg-rose-700 transition-colors">
+            Confirm Cancellation
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/components.js?v=mobile-nav-fix-5"></script>
+  <script src="../js/navigation.js?v=mobile-nav-fix-6"></script>
+  <script src="../js/dashboard.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

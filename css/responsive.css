@@ -1,0 +1,75 @@
+/* Aurelle Aesthetics - Responsive Custom Adjustments */
+
+/* Ultra small screens (320px - 375px) */
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 1.75rem !important;
+    line-height: 2.25rem !important;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem !important;
+    line-height: 2.75rem !important;
+  }
+
+  .btn-primary, .btn-secondary, .btn-gold {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .step-circle {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .step-label {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile Nav transitions */
+@media (max-width: 1279px) {
+  .mobile-menu-drawer {
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .mobile-menu-drawer.open {
+    transform: translateX(0);
+  }
+}
+
+/* High-resolution and large screens (1440px - 1920px+) */
+@media (min-width: 1920px) {
+  .container-ultra {
+    max-width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header, footer, .no-print, #toast-container {
+    display: none !important;
+  }
+  
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}

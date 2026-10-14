@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Concierge | Aurelle Aesthetics Med Spa</title>
+  <meta name="description" content="Get in touch with Aurelle Aesthetics clinic concierge. Inquire about treatments, consultations, parking, and clinic business hours.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/themes.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body class="bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased">
+
+  <!-- Shared Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content" class="min-h-screen py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Page Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="section-subtitle">Clinic Concierge</span>
+        <h1 class="section-title">Get in Touch with Aurelle</h1>
+        <p class="text-stone-600 dark:text-stone-300 font-light text-sm sm:text-base mt-4 leading-relaxed">
+          Whether you have questions about specific treatments, wish to book a private VIP suite, or require post-care guidance, our concierge is here to assist you.
+        </p>
+      </div>
+
+      <!-- Confirmation Banner (Initially Hidden) -->
+      <div id="contact-success-banner" class="hidden mb-10 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200 flex items-start gap-4 shadow-soft">
+        <div class="p-2 rounded-full bg-emerald-100 dark:bg-emerald-900/60 text-emerald-600 shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-medium">Inquiry Received Successfully! (Demo)</h4>
+          <p class="text-xs sm:text-sm font-light mt-1 text-emerald-800 dark:text-emerald-300">
+            Thank you for reaching out to Aurelle Aesthetics. Your inquiry has been saved to demonstration storage. In a live environment, our clinical concierge responds within 2 business hours.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid min-w-0 grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left 7 Columns: Validated Inquiry Form -->
+        <div class="min-w-0 lg:col-span-7 card-luxury p-6 sm:p-10 shadow-luxury">
+          <div class="mb-6">
+            <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Send a Private Inquiry</h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Fields marked with <span class="text-rose-500">*</span> are required.</p>
+          </div>
+
+          <form id="contact-inquiry-form" autocomplete="off" novalidate class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="contact-name" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                  Full Name <span class="text-rose-500">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="fullName" 
+                  autocomplete="off"
+                  required 
+                  maxlength="100"
+                  aria-describedby="contact-name-error"
+                  placeholder="Enter your full name"
+                  class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+                <p id="contact-name-error" class="hidden text-xs text-rose-500 mt-1" role="alert"></p>
+              </div>
+
+              <div>
+                <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                  Email Address <span class="text-rose-500">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  autocomplete="off"
+                  required 
+                  maxlength="254"
+                  aria-describedby="contact-email-error"
+                  placeholder="name@example.com"
+                  class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+                <p id="contact-email-error" class="hidden text-xs text-rose-500 mt-1" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="contact-phone" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                  Phone Number <span class="text-rose-500">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  name="phone" 
+                  autocomplete="off"
+                  required 
+                  maxlength="25"
+                  aria-describedby="contact-phone-error"
+                  placeholder="Enter your phone number"
+                  class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+                <p id="contact-phone-error" class="hidden text-xs text-rose-500 mt-1" role="alert"></p>
+              </div>
+
+              <div>
+                <label for="contact-interest" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                  Primary Service Interest
+                </label>
+                <select 
+                  id="contact-interest" 
+                  name="interest"
+                  autocomplete="off"
+                  class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+                >
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="General Consultation">Comprehensive 3D Facial Consultation</option>
+                  <option value="Botox & Neurotoxins">Botox & Wrinkle Relaxers</option>
+                  <option value="Dermal Fillers">Sculpt & Contour Dermal Fillers</option>
+                  <option value="Morpheus8 RF">Morpheus8 RF Microneedling</option>
+                  <option value="Fractional Laser">Fractional Laser Resurfacing</option>
+                  <option value="Chemical Peels">Medical-Grade Chemical Peels</option>
+                  <option value="Hydra Facial">Aurelle Triple-Infusion Facial</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-time" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                Preferred Callback Time Window
+              </label>
+              <select 
+                id="contact-time" 
+                name="preferredTime"
+                autocomplete="off"
+                class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+              >
+                <option value="" selected disabled>Select a preferred time</option>
+                <option value="Morning">Morning (9:00 AM â€“ 12:00 PM)</option>
+                <option value="Afternoon">Afternoon (12:00 PM â€“ 4:00 PM)</option>
+                <option value="Evening">Evening (4:00 PM â€“ 7:00 PM)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-aurelle-charcoal dark:text-stone-300 mb-1.5">
+                Your Goals, Questions, or Treatment History <span class="text-rose-500">*</span>
+              </label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                rows="4" 
+                required 
+                minlength="10"
+                maxlength="2000"
+                aria-describedby="contact-message-error"
+                placeholder="Please share any specific aesthetic goals, prior treatments, or questions you have for our team..."
+                class="w-full px-4 py-3 rounded-xl border border-stone-200 dark:border-aurelle-darkborder bg-stone-50/50 dark:bg-stone-900/50 text-xs sm:text-sm text-aurelle-charcoal dark:text-white focus:outline-none focus:ring-1 focus:ring-aurelle-gold"
+              ></textarea>
+              <p id="contact-message-error" class="hidden text-xs text-rose-500 mt-1" role="alert"></p>
+            </div>
+
+            <div class="flex items-start gap-2.5 pt-2">
+              <input type="checkbox" id="contact-consent" name="consent" required aria-describedby="contact-consent-error" class="mt-1 rounded text-aurelle-gold focus:ring-aurelle-gold">
+              <label for="contact-consent" class="text-xs text-stone-500 dark:text-stone-400 font-light leading-snug">
+                I agree to receive communications from Aurelle Aesthetics regarding my consultation inquiry. (Demo consent).
+              </label>
+            </div>
+
+            <p id="contact-consent-error" class="form-error-msg hidden text-xs text-rose-500" role="alert"></p>
+            <p id="contact-submission-error" class="hidden text-xs text-rose-500" role="alert"></p>
+
+            <button type="submit" class="btn-primary w-full text-xs py-3.5 tracking-widest uppercase">
+              Submit Private Inquiry
+            </button>
+          </form>
+        </div>
+
+        <!-- Right 5 Columns: Clinic Location, Hours & Parking -->
+        <div class="min-w-0 lg:col-span-5 space-y-8">
+          
+          <!-- Clinic Info Card -->
+          <div class="card-luxury p-6 sm:p-8 space-y-6">
+            <h3 class="font-serif text-xl font-normal text-aurelle-charcoal dark:text-white">Clinic Sanctuary Details</h3>
+            
+            <div class="space-y-4 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light">
+              <div class="flex items-start gap-3">
+                <span class="text-aurelle-gold text-base shrink-0 mt-0.5">ðŸ“</span>
+                <div>
+                  <p class="font-semibold text-aurelle-charcoal dark:text-white">Aurelle Aesthetics Clinic (Demo)</p>
+                  <p>9460 Wilshire Blvd, Suite 400</p>
+                  <p>Beverly Hills, CA 90212</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-aurelle-gold text-base shrink-0 mt-0.5">ðŸ“ž</span>
+                <div>
+                  <p class="font-semibold text-aurelle-charcoal dark:text-white">Concierge Desk</p>
+                  <p>(555) 794-2026</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-aurelle-gold text-base shrink-0 mt-0.5">âœ‰ï¸</span>
+                <div>
+                  <p class="font-semibold text-aurelle-charcoal dark:text-white">Direct Correspondence</p>
+                  <p>concierge@aurelle-aesthetics-demo.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours Table -->
+            <div class="pt-4 border-t border-stone-100 dark:border-aurelle-darkborder">
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-aurelle-gold mb-3">Clinical Operating Hours</h4>
+              <div class="space-y-2 text-xs text-stone-600 dark:text-stone-300 font-light">
+                <div class="flex justify-between py-1 border-b border-stone-100/60 dark:border-stone-800">
+                  <span>Monday â€“ Friday:</span>
+                  <span class="font-medium text-aurelle-charcoal dark:text-white">9:00 AM â€“ 7:00 PM</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-100/60 dark:border-stone-800">
+                  <span>Saturday:</span>
+                  <span class="font-medium text-aurelle-charcoal dark:text-white">10:00 AM â€“ 5:00 PM</span>
+                </div>
+                <div class="flex justify-between py-1 text-stone-400">
+                  <span>Sunday:</span>
+                  <span>VIP Private Reservations Only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parking & Arrival Guide -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-aurelle-darkcard border border-stone-200/80 dark:border-aurelle-darkborder space-y-3">
+            <h4 class="font-serif text-base font-medium text-aurelle-charcoal dark:text-white">Valet & Arrival Information</h4>
+            <p class="text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed">
+              Complimentary underground valet parking is available on Wilshire Blvd with direct private elevator access to Suite 400. Please arrive 10 minutes prior to complete your skin history check.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Location Map -->
+      <section class="mt-14 w-full min-w-0 sm:mt-16 lg:mt-20" aria-labelledby="location-heading">
+        <div class="mb-6 text-center">
+          <span class="section-subtitle">Visit Our Clinic</span>
+          <h2 id="location-heading" class="section-title">Our Location</h2>
+          <p class="mx-auto mt-3 max-w-full break-words text-sm font-light text-stone-600 dark:text-stone-300">9460 Wilshire Blvd, Suite 400, Beverly Hills, CA 90212</p>
+        </div>
+        <div class="w-full min-w-0 overflow-hidden rounded-2xl border border-stone-200/80 dark:border-aurelle-darkborder shadow-luxury">
+          <iframe
+            class="block h-[320px] w-full sm:h-[400px] lg:h-[440px]"
+            src="https://www.google.com/maps?q=9460+Wilshire+Blvd%2C+Suite+400%2C+Beverly+Hills%2C+CA+90212&output=embed"
+            title="Map showing Aurelle Aesthetics at 9460 Wilshire Blvd, Suite 400, Beverly Hills, CA 90212"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="footer-placeholder"></div>
+
+  <div id="toast-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/components.js?v=mobile-nav-fix-5"></script>
+  <script src="../js/navigation.js?v=mobile-nav-fix-6"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

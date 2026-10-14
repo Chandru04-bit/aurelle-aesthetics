@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatment Details | Aurelle Aesthetics Med Spa</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/themes.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body class="bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased">
+
+  <!-- Shared Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content" class="min-h-screen py-10 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="flex items-center space-x-2 text-xs text-stone-500 dark:text-stone-400 mb-8" aria-label="Breadcrumb">
+        <a href="../index.html" class="hover:text-aurelle-gold transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <a href="./treatments.html" class="hover:text-aurelle-gold transition-colors">Treatments</a>
+        <span>&rsaquo;</span>
+        <span id="details-breadcrumb-current" class="text-aurelle-charcoal dark:text-aurelle-darktext font-medium">Treatment Details</span>
+      </nav>
+
+      <!-- Main Layout: Content & Sticky Booking Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 items-start">
+        
+        <!-- Left 2 Columns: Detailed Information -->
+        <div class="lg:col-span-2 space-y-12">
+          
+          <!-- Header & Hero Image -->
+          <div class="space-y-6">
+            <span id="details-category-badge" class="badge-pill bg-aurelle-blush/40 dark:bg-stone-800 text-aurelle-charcoal dark:text-aurelle-gold text-xs font-semibold">Category</span>
+            <h1 id="details-title" class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-aurelle-charcoal dark:text-aurelle-darktext tracking-tight">
+              Treatment Title
+            </h1>
+            <p id="details-tagline" class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-aurelle-gold">
+              Tagline
+            </p>
+
+            <div class="rounded-2xl overflow-hidden h-[340px] sm:h-[420px] bg-stone-100 dark:bg-stone-800 shadow-luxury">
+              <img id="details-hero-img" src="" alt="Treatment detail visual" class="w-full h-full object-cover">
+            </div>
+
+            <p id="details-description" class="text-base text-stone-600 dark:text-stone-300 font-light leading-relaxed">
+              Full treatment description...
+            </p>
+          </div>
+
+          <!-- Key Performance Metrics Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-white dark:bg-aurelle-darkcard border border-stone-200/80 dark:border-aurelle-darkborder shadow-soft">
+            <div class="space-y-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-stone-400">Duration</span>
+              <p id="metric-duration" class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">30 mins</p>
+            </div>
+            <div class="space-y-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-stone-400">Downtime</span>
+              <p id="metric-downtime" class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">None</p>
+            </div>
+            <div class="space-y-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-stone-400">Discomfort</span>
+              <p id="metric-discomfort" class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Minimal</p>
+            </div>
+            <div class="space-y-1">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-stone-400">Longevity</span>
+              <p id="metric-longevity" class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">3-5 Months</p>
+            </div>
+          </div>
+
+          <!-- Target Treatment Areas -->
+          <div class="space-y-4">
+            <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Target Anatomical Areas</h3>
+            <ul id="details-target-areas" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- Rendered by JS -->
+            </ul>
+          </div>
+
+          <!-- Clinical Benefits -->
+          <div class="space-y-4">
+            <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Clinical Benefits & Outgrowths</h3>
+            <div id="details-benefits" class="grid grid-cols-1 gap-3">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Preparation Guidelines -->
+          <div class="card-luxury p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <h3 class="font-serif text-xl font-medium text-aurelle-charcoal dark:text-white">Pre-Treatment Preparation Guidelines</h3>
+            </div>
+            <p class="text-xs text-stone-500 dark:text-stone-400 font-light">Follow these steps prior to your appointment to ensure minimal bruising and optimal treatment safety.</p>
+            <ul id="details-preparation" class="space-y-3 pt-2">
+              <!-- Rendered by JS -->
+            </ul>
+          </div>
+
+          <!-- Post-Treatment Aftercare -->
+          <div class="card-luxury p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-aurelle-sage"></span>
+              <h3 class="font-serif text-xl font-medium text-aurelle-charcoal dark:text-white">Post-Treatment Aftercare & Recovery</h3>
+            </div>
+            <p class="text-xs text-stone-500 dark:text-stone-400 font-light">Our physician-curated recovery protocol designed to lock in results and accelerate tissue calm.</p>
+            <ul id="details-aftercare" class="space-y-3 pt-2">
+              <!-- Rendered by JS -->
+            </ul>
+          </div>
+
+          <!-- Treatment FAQs -->
+          <div class="space-y-4">
+            <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white">Frequently Asked Inquiries</h3>
+            <div id="details-faqs" class="space-y-3">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Sticky Booking Card -->
+        <div class="lg:sticky lg:top-28 space-y-6">
+          <div class="card-luxury p-6 sm:p-8 shadow-luxury space-y-6">
+            
+            <div class="pb-6 border-b border-stone-100 dark:border-aurelle-darkborder">
+              <span class="text-xs font-semibold uppercase tracking-widest text-aurelle-gold">Treatment Investment</span>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span id="booking-card-price" class="font-serif text-3xl font-bold text-aurelle-charcoal dark:text-aurelle-darktext">â‚¹350</span>
+                <span class="text-xs text-stone-500 font-light">/ session</span>
+              </div>
+              <p class="text-[11px] text-stone-400 mt-1">Multi-session package bundles available upon consultation.</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-stone-600 dark:text-stone-300">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">âœ“</span>
+                <span>Performed by Board-Certified Medical Specialist</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">âœ“</span>
+                <span>Complimentary 2-Week Follow-Up Review</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">âœ“</span>
+                <span>Personalized Pre & Post-Care Support</span>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a id="details-book-btn" href="./booking.html" class="btn-primary w-full text-center text-xs py-3.5 shadow-md">
+                Book This Treatment
+              </a>
+              <p class="text-[10px] text-center text-stone-400 mt-2">Instant online confirmation &bull; No deposit required for consultation</p>
+            </div>
+
+          </div>
+
+          <!-- Complementary Consultation Note -->
+          <div class="p-5 rounded-2xl bg-aurelle-blush/20 dark:bg-stone-900 border border-aurelle-blush/40 dark:border-aurelle-darkborder text-xs space-y-2">
+            <h4 class="font-serif text-sm font-semibold text-aurelle-charcoal dark:text-white">Have Specific Anatomical Questions?</h4>
+            <p class="text-stone-600 dark:text-stone-300 font-light">Our concierge team is available to guide you on provider matching and preparatory instructions.</p>
+            <a href="./contact.html" class="inline-block text-aurelle-gold font-semibold uppercase tracking-wider text-[11px] hover:underline">Contact Concierge &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Related Treatments Carousel / Grid -->
+      <div class="mt-20 pt-12 border-t border-stone-200 dark:border-aurelle-darkborder">
+        <h3 class="font-serif text-2xl font-normal text-aurelle-charcoal dark:text-white mb-6">Complementary Procedures</h3>
+        <div id="related-treatments-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <div id="footer-placeholder"></div>
+
+  <div id="toast-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/components.js?v=mobile-nav-fix-5"></script>
+  <script src="../js/navigation.js?v=mobile-nav-fix-6"></script>
+  <script src="../js/treatment-details.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "aurelle-aesthetics",
+  "version": "1.0.0",
+  "description": "Aurelle Aesthetics - Premium Med Spa & Non-Surgical Aesthetics Clinic",
+  "main": "js/main.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "med-spa",
+    "aesthetics",
+    "botox",
+    "dermal-fillers",
+    "skincare",
+    "clinic",
+    "vanilla-js",
+    "tailwind-css"
+  ],
+  "author": "Aurelle Aesthetics",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.19"
+  },
+  "type": "commonjs"
+}
