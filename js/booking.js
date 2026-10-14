@@ -102,7 +102,7 @@
             <div>
               <span class="text-[10px] uppercase font-bold tracking-wider text-aurelle-gold">${t.categoryName}</span>
               <h4 class="font-serif text-base font-medium text-aurelle-charcoal dark:text-aurelle-darktext">${t.name}</h4>
-              <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">⏱ ${t.duration} &bull; Downtime: ${t.downtime}</p>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mt-0.5">${t.duration} &bull; Downtime: ${t.downtime}</p>
             </div>
           </div>
           <div class="text-right shrink-0">
