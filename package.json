@@ -5,7 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
-    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify && node ./scripts/prepare-deployment.js",
     "serve": "npx serve ."
   },
   "keywords": [

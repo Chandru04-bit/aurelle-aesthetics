@@ -98,6 +98,7 @@ npm install
 ```bash
 npm run build
 ```
+The production build also prepares a `dist/` directory containing the static website and its required assets. Vercel is configured to deploy this directory.
 
 ### 3. Start Development Watcher
 ```bash
