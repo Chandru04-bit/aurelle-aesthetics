@@ -1,4 +1,4 @@
-﻿<header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300 glass-header border-b border-stone-200/60 dark:border-aurelle-darkborder">
+<header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300 glass-header border-b border-stone-200/60 dark:border-aurelle-darkborder">
   <div class="site-content-container">
     <div class="flex items-center justify-between h-20">
       
@@ -18,8 +18,8 @@
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden xl:flex flex-1 items-center justify-center gap-3 2xl:gap-5 px-3" aria-label="Main Navigation">
-        <!-- Home Dropdown Menu (Home 1 & Home 2) -->
+      <nav class="hidden lg:flex flex-1 items-center justify-center gap-3 2xl:gap-5 px-3" aria-label="Main Navigation">
+        <!-- Home Dropdown Menu -->
         <div class="relative group/nav-dropdown inline-block" id="desktop-home-dropdown">
           <button type="button" class="nav-link nav-dropdown-trigger inline-flex items-center gap-1 text-sm font-medium tracking-wide text-aurelle-charcoal/80 hover:text-aurelle-gold dark:text-aurelle-darktext/80 dark:hover:text-aurelle-gold transition-colors duration-200 focus:outline-none" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
             <span>Home</span>
@@ -28,13 +28,13 @@
             </svg>
           </button>
           
-          <div class="nav-dropdown-menu absolute left-0 top-full pt-2 w-48 transition-all duration-200 opacity-0 pointer-events-none -translate-y-1 group-hover/nav-dropdown:opacity-100 group-hover/nav-dropdown:pointer-events-auto group-hover/nav-dropdown:translate-y-0" id="home-dropdown-menu" role="menu" aria-labelledby="home-dropdown-btn">
-            <div class="bg-white/95 dark:bg-aurelle-darkcard/95 backdrop-blur-md rounded-xl shadow-xl border border-stone-200/80 dark:border-aurelle-darkborder p-1.5 space-y-1">
-              <a href="./index.html" class="nav-link nav-dropdown-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem">
-                <span>Home</span>
+          <div class="nav-dropdown-menu absolute left-0 top-full pt-2" id="home-dropdown-menu" role="menu" aria-labelledby="home-dropdown-btn">
+            <div class="bg-white dark:bg-aurelle-darkcard rounded-2xl shadow-lg border border-stone-200/80 dark:border-aurelle-darkborder p-2 space-y-1">
+              <a href="./index.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem">
+                <span>Welcome</span>
               </a>
-              <a href="./pages/home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem">
-                <span>Signature Home</span>
+              <a href="./pages/home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem">
+                <span>Harmonic Radiance</span>
               </a>
             </div>
           </div>
@@ -87,7 +87,7 @@
       </div>
 
       <!-- Mobile Header: utility and account controls are available in the drawer. -->
-      <div class="navbar-mobile-controls flex shrink-0 items-center xl:hidden">
+      <div class="navbar-mobile-controls flex shrink-0 items-center lg:hidden">
         <button id="mobile-menu-toggle" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100 dark:hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-aurelle-gold" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open main navigation menu">
           <svg class="w-6 h-6 menu-open-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
@@ -104,9 +104,9 @@
   </header>
 
   <!-- Mobile Drawer Overlay & Menu -->
-  <div id="mobile-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 xl:hidden"></div>
+  <div id="mobile-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 lg:hidden"></div>
 
-  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-aurelle-ivory dark:bg-aurelle-darkcard z-50 shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 xl:hidden" aria-hidden="true">
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-aurelle-ivory dark:bg-aurelle-darkcard z-50 shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 lg:hidden" aria-hidden="true">
     <div>
       <div class="flex items-center justify-between pb-6 border-b border-stone-200 dark:border-aurelle-darkborder">
         <div class="flex items-center gap-2">
@@ -121,17 +121,17 @@
         <!-- Mobile Home Accordion Group -->
         <div class="mobile-home-group border-b border-stone-100 dark:border-stone-800 pb-1">
           <button type="button" class="w-full flex items-center justify-between py-2 text-base font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:text-aurelle-gold focus:outline-none mobile-home-toggle" id="mobile-home-toggle" aria-expanded="false" aria-controls="mobile-home-submenu">
-            <span>Home</span>
+            <span>            Home</span>
             <svg class="w-4 h-4 transition-transform duration-200 mobile-home-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div id="mobile-home-submenu" class="hidden pl-3 pt-1 pb-1 space-y-1">
             <a href="./index.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">
-              Home
+              Welcome
             </a>
             <a href="./pages/home-2.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">
-              Signature Home
+              Harmonic Radiance
             </a>
           </div>
         </div>

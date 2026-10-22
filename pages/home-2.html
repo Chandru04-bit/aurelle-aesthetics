@@ -95,23 +95,23 @@
               <div class="absolute -inset-3 rounded-3xl border border-aurelle-gold/40 dark:border-aurelle-gold/30 -rotate-2 pointer-events-none"></div>
               
               <!-- Main Hero Image Frame -->
-              <div class="home2-image-portrait relative rounded-2xl overflow-hidden shadow-2xl bg-stone-200 dark:bg-stone-800 aspect-[4/5]">
+              <div class="home2-image-portrait home2-hero-image relative mx-auto w-full rounded-2xl overflow-hidden shadow-2xl bg-stone-200 dark:bg-stone-800 aspect-[4/5]">
                 <img 
                   src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1400&q=80" 
                   alt="Portrait of serene beauty showcasing smooth radiant skin and natural facial contours" 
-                  class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                  class="block w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   loading="eager"
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 
                 <!-- Floating Info Card -->
-                <div class="absolute bottom-5 inset-x-5 p-4 rounded-xl glass-card backdrop-blur-md bg-white/80 dark:bg-stone-900/80 border border-white/50 dark:border-stone-700/60 shadow-lg">
-                  <div class="flex items-center justify-between">
-                    <div>
-                      <p class="text-[10px] uppercase tracking-widest text-aurelle-gold font-semibold">The Aurelle Protocol</p>
+                <div class="home2-protocol-card absolute bottom-4 sm:bottom-5 inset-x-4 sm:inset-x-5 p-3 sm:p-4 rounded-xl glass-card backdrop-blur-md shadow-lg">
+                  <div class="flex items-center gap-3">
+                    <div class="home2-protocol-copy">
+                      <p class="text-[10px] uppercase tracking-widest text-aurelle-gold-dark dark:text-aurelle-gold font-semibold">The Aurelle Protocol</p>
                       <p class="text-xs sm:text-sm font-serif font-medium text-aurelle-charcoal dark:text-white">Subtle Anatomical Micro-Dosing</p>
                     </div>
-                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-aurelle-gold/20 text-aurelle-gold text-xs font-semibold">
+                    <span class="home2-protocol-check inline-flex items-center justify-center w-8 h-8 rounded-full bg-aurelle-gold/30 text-aurelle-gold-dark dark:bg-aurelle-gold/20 dark:text-aurelle-gold text-xs font-semibold">
                       &check;
                     </span>
                   </div>
@@ -207,11 +207,11 @@
          SECTION 3: FEATURED TREATMENTS
          4 Signature Cards with Real Treatment-Specific Images
          ======================================================== -->
-    <section id="home2-treatments" class="py-20 sm:py-28" aria-label="Featured Treatments Catalog">
+    <section id="home2-treatments" class="py-14 sm:py-20" aria-label="Featured Treatments Catalog">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="max-w-2xl mx-auto text-center space-y-3 mb-14 sm:mb-16">
+        <div class="max-w-2xl mx-auto text-center space-y-3 mb-10 sm:mb-12">
           <div class="inline-flex items-center gap-2 justify-center">
             <span class="w-6 h-px bg-aurelle-gold"></span>
             <span class="text-xs font-semibold uppercase tracking-[0.2em] text-aurelle-gold">Curated Menu</span>
@@ -226,10 +226,10 @@
         </div>
 
         <!-- 4 Treatment Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div class="home2-treatment-grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch gap-5 sm:gap-6 xl:gap-7">
           
           <!-- Card 1: Neuromodulators -->
-          <div class="group flex flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="home2-treatment-card group flex h-full flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="home2-image-landscape relative aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80" 
@@ -241,20 +241,20 @@
                 Injectables
               </span>
             </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4 text-left">
+            <div class="home2-treatment-card-content p-5 sm:p-6 flex-1 flex flex-col text-left">
               <div class="space-y-2">
-                <div class="flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
+                <div class="home2-treatment-meta flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
                   <span>30 mins</span>
                   <span>Endures 3–5 Mos</span>
                 </div>
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
+                <h3 class="home2-treatment-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
                   Precision Neuromodulators
                 </h3>
-                <p class="text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
+                <p class="home2-treatment-description text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
                   Micro-targeted botulinum relaxers placed with anatomical accuracy to smooth upper facial lines while preserving warmth and emotion.
                 </p>
               </div>
-              <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+              <div class="home2-treatment-footer mt-auto pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between gap-2">
                 <span class="text-xs font-semibold text-aurelle-charcoal dark:text-aurelle-gold">From ₹350</span>
                 <a href="./treatment-details.html?id=botox-wrinkle-relaxers" class="text-xs font-semibold text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors">
                   View Protocol &rarr;
@@ -264,7 +264,7 @@
           </div>
 
           <!-- Card 2: Dermal Architecture -->
-          <div class="group flex flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="home2-treatment-card group flex h-full flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="home2-image-landscape relative aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" 
@@ -276,20 +276,20 @@
                 Contour
               </span>
             </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4 text-left">
+            <div class="home2-treatment-card-content p-5 sm:p-6 flex-1 flex flex-col text-left">
               <div class="space-y-2">
-                <div class="flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
+                <div class="home2-treatment-meta flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
                   <span>45 mins</span>
                   <span>Endures 9–18 Mos</span>
                 </div>
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
+                <h3 class="home2-treatment-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
                   Hyaluronic Dermal Sculpting
                 </h3>
-                <p class="text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
+                <p class="home2-treatment-description text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
                   Restores subcutaneous mid-face volume, refines jawline angles, and hydrates perioral contours with premier cohesive gels.
                 </p>
               </div>
-              <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+              <div class="home2-treatment-footer mt-auto pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between gap-2">
                 <span class="text-xs font-semibold text-aurelle-charcoal dark:text-aurelle-gold">From ₹650</span>
                 <a href="./treatment-details.html?id=dermal-fillers" class="text-xs font-semibold text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors">
                   View Protocol &rarr;
@@ -299,7 +299,7 @@
           </div>
 
           <!-- Card 3: Clinical Laser -->
-          <div class="group flex flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="home2-treatment-card group flex h-full flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="home2-image-landscape relative aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=800&q=80" 
@@ -311,20 +311,20 @@
                 Laser
               </span>
             </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4 text-left">
+            <div class="home2-treatment-card-content p-5 sm:p-6 flex-1 flex flex-col text-left">
               <div class="space-y-2">
-                <div class="flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
+                <div class="home2-treatment-meta flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
                   <span>60 mins</span>
                   <span>Endures 12+ Mos</span>
                 </div>
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
+                <h3 class="home2-treatment-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
                   Fractional Laser Resurfacing
                 </h3>
-                <p class="text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
+                <p class="home2-treatment-description text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
                   Controlled photothermal columns stimulate deep collagen remodelling, smoothing acne scars, textural irregularities, and sun damage.
                 </p>
               </div>
-              <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+              <div class="home2-treatment-footer mt-auto pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between gap-2">
                 <span class="text-xs font-semibold text-aurelle-charcoal dark:text-aurelle-gold">From ₹800</span>
                 <a href="./treatment-details.html?id=laser-skin-resurfacing" class="text-xs font-semibold text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors">
                   View Protocol &rarr;
@@ -334,7 +334,7 @@
           </div>
 
           <!-- Card 4: Cellular Hydro-Infusion -->
-          <div class="group flex flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="home2-treatment-card group flex h-full flex-col rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="home2-image-landscape relative aspect-[4/3] overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80" 
@@ -346,20 +346,20 @@
                 Facial
               </span>
             </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4 text-left">
+            <div class="home2-treatment-card-content p-5 sm:p-6 flex-1 flex flex-col text-left">
               <div class="space-y-2">
-                <div class="flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
+                <div class="home2-treatment-meta flex items-center justify-between text-[11px] text-stone-500 dark:text-stone-400">
                   <span>50 mins</span>
                   <span>Instant Glow</span>
                 </div>
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
+                <h3 class="home2-treatment-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white group-hover:text-aurelle-gold transition-colors">
                   Cellular Hydro-Infusion
                 </h3>
-                <p class="text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
+                <p class="home2-treatment-description text-xs text-stone-500 dark:text-stone-400 font-light leading-relaxed line-clamp-3">
                   Vortex vacuum extraction paired with hyaluronic, peptide, and antioxidant saturation to unveil instant glass-like radiance.
                 </p>
               </div>
-              <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+              <div class="home2-treatment-footer mt-auto pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between gap-2">
                 <span class="text-xs font-semibold text-aurelle-charcoal dark:text-aurelle-gold">From ₹275</span>
                 <a href="./treatment-details.html?id=hydrafacial-elite" class="text-xs font-semibold text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors">
                   View Protocol &rarr;
@@ -470,10 +470,10 @@
          SECTION 5: OUR TREATMENT PROCESS
          The 4-Stage Patient Journey Protocol
          ======================================================== -->
-    <section id="home2-process" class="py-20 sm:py-28" aria-label="Our Treatment Process">
+    <section id="home2-process" class="py-14 sm:py-20" aria-label="Our Treatment Process">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="max-w-2xl mx-auto text-center space-y-3 mb-14 sm:mb-16">
+        <div class="max-w-2xl mx-auto text-center space-y-3 mb-10 sm:mb-12">
           <div class="inline-flex items-center gap-2 justify-center">
             <span class="w-6 h-px bg-aurelle-gold"></span>
             <span class="text-xs font-semibold uppercase tracking-[0.2em] text-aurelle-gold">The Journey</span>
@@ -487,10 +487,10 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div class="home2-process-grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch gap-5 sm:gap-6 relative">
           
           <!-- Step 1 -->
-          <div class="relative p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
+          <div class="home2-process-card relative p-5 sm:p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
             <div class="w-12 h-12 rounded-full border border-aurelle-gold/60 flex items-center justify-center font-serif text-lg font-bold text-aurelle-gold bg-aurelle-blush/20 dark:bg-stone-800">
               01
             </div>
@@ -506,7 +506,7 @@
           </div>
 
           <!-- Step 2 -->
-          <div class="relative p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
+          <div class="home2-process-card relative p-5 sm:p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
             <div class="w-12 h-12 rounded-full border border-aurelle-gold/60 flex items-center justify-center font-serif text-lg font-bold text-aurelle-gold bg-aurelle-blush/20 dark:bg-stone-800">
               02
             </div>
@@ -522,7 +522,7 @@
           </div>
 
           <!-- Step 3 -->
-          <div class="relative p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
+          <div class="home2-process-card relative p-5 sm:p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
             <div class="w-12 h-12 rounded-full border border-aurelle-gold/60 flex items-center justify-center font-serif text-lg font-bold text-aurelle-gold bg-aurelle-blush/20 dark:bg-stone-800">
               03
             </div>
@@ -538,7 +538,7 @@
           </div>
 
           <!-- Step 4 -->
-          <div class="relative p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
+          <div class="home2-process-card relative p-5 sm:p-6 rounded-2xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all duration-300 space-y-4 text-left">
             <div class="w-12 h-12 rounded-full border border-aurelle-gold/60 flex items-center justify-center font-serif text-lg font-bold text-aurelle-gold bg-aurelle-blush/20 dark:bg-stone-800">
               04
             </div>
@@ -670,24 +670,35 @@
         </div>
 
         <!-- Clinical Safety Commitments Row -->
-        <div class="mt-12 p-6 rounded-2xl bg-white/80 dark:bg-stone-900/80 border border-stone-200/80 dark:border-stone-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div class="space-y-1">
-            <span class="text-aurelle-gold text-lg font-serif">&check;</span>
+        <div class="mt-12 p-6 rounded-2xl bg-white/80 dark:bg-stone-900/80 border border-stone-200/80 dark:border-stone-800 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-5 text-center">
+          <div class="flex flex-col items-center gap-2">
+            <svg class="w-8 h-8 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 3 8 9-8 9-8-9 8-9Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4 12 8 2 8-2M12 3v11" />
+            </svg>
             <p class="text-xs font-semibold text-aurelle-charcoal dark:text-white">Allergan Diamond</p>
             <p class="text-[10px] text-stone-400">Authentic FDA Products</p>
           </div>
-          <div class="space-y-1">
-            <span class="text-aurelle-gold text-lg font-serif">&check;</span>
+          <div class="flex flex-col items-center gap-2">
+            <svg class="w-8 h-8 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 12 2 2 4-4" />
+            </svg>
             <p class="text-xs font-semibold text-aurelle-charcoal dark:text-white">HIPAA Protected</p>
             <p class="text-[10px] text-stone-400">Encrypted Patient Records</p>
           </div>
-          <div class="space-y-1">
-            <span class="text-aurelle-gold text-lg font-serif">&check;</span>
+          <div class="flex flex-col items-center gap-2">
+            <svg class="w-8 h-8 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="6" stroke-width="1.5" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.2 13-1.2 8 5-2.5 5 2.5-1.2-8M9.5 8l1.7 1.7L14.8 6" />
+            </svg>
             <p class="text-xs font-semibold text-aurelle-charcoal dark:text-white">Board-Certified</p>
             <p class="text-[10px] text-stone-400">Medical Directors</p>
           </div>
-          <div class="space-y-1">
-            <span class="text-aurelle-gold text-lg font-serif">&check;</span>
+          <div class="flex flex-col items-center gap-2">
+            <svg class="w-8 h-8 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
             <p class="text-xs font-semibold text-aurelle-charcoal dark:text-white">Zero Pressure</p>
             <p class="text-[10px] text-stone-400">Ethical Care Guarantees</p>
           </div>

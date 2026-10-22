@@ -52,6 +52,24 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
   padding-inline: 0.75rem;
 }
 
+.home1-hero-heading {
+  max-width: 100%;
+  font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3.9vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.home1-hero-heading-line {
+  display: block;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
 @media (min-width: 640px) {
   .site-content-container {
     padding-inline: 1.5rem;
@@ -940,6 +958,64 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
   letter-spacing: 0.04em;
 }
 
+.treatment-category-grid,
+.about-care-stages {
+  box-sizing: border-box;
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+
+.treatment-category-card,
+.about-care-stage {
+  box-sizing: border-box;
+  min-width: 0;
+  height: 100%;
+}
+
+.treatment-category-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-category-content,
+.treatment-category-copy {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.treatment-category-title {
+  min-height: 3.5rem;
+  line-height: 1.35;
+}
+
+.treatment-category-description {
+  min-height: 5rem;
+}
+
+.treatment-category-bullets {
+  line-height: 1.5;
+}
+
+.treatment-category-cta {
+  margin-top: auto;
+  flex: 0 0 auto;
+  min-height: 2.5rem;
+}
+
+.about-care-stage {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-care-stage-title {
+  min-height: 3.5rem;
+  line-height: 1.35;
+}
+
+.about-care-stage > p {
+  flex: 1;
+}
+
 .provider-availability {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -1024,8 +1100,86 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
   aspect-ratio: 4 / 5;
 }
 
+.home2-hero-image {
+  max-width: 30rem;
+}
+
+.home2-protocol-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(197, 168, 128, 0.35);
+}
+
+.home2-protocol-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.home2-protocol-check {
+  flex: 0 0 2rem;
+}
+
+.dark .home2-protocol-card {
+  background: rgba(28, 29, 26, 0.88);
+  border-color: rgba(47, 48, 44, 0.8);
+}
+
 .home2-image-landscape {
   aspect-ratio: 4 / 3;
+}
+
+.home2-treatment-card {
+  min-width: 0;
+}
+
+.home2-treatment-card-content {
+  gap: 1rem;
+}
+
+.home2-treatment-meta {
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.home2-treatment-meta span:last-child {
+  text-align: right;
+}
+
+.home2-treatment-title {
+  min-height: 3.5rem;
+  line-height: 1.35;
+}
+
+.home2-treatment-description {
+  min-height: 3.7rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.home2-treatment-footer {
+  min-height: 3rem;
+}
+
+.home2-treatment-footer > * {
+  white-space: nowrap;
+}
+
+.home2-process-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.home2-process-card h3 {
+  min-height: 3rem;
+}
+
+.home2-process-card p {
+  flex: 1;
+  font-size: 0.8125rem;
+}
+
+.home2-process-card > div:last-child {
+  margin-top: auto;
 }
 
 .home2-image-review {
@@ -1232,8 +1386,8 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
    Navbar Dropdown Menu (Desktop & Mobile)
    ======================================================== */
 .nav-dropdown-menu {
-  width: 12rem;
-  min-width: 12rem;
+  width: min(17rem, calc(100vw - 2rem));
+  min-width: min(17rem, calc(100vw - 2rem));
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4px);
@@ -1250,8 +1404,8 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
   flex-shrink: 0;
 }
 
-.group\/nav-dropdown:hover .nav-dropdown-menu,
-.group\/nav-dropdown:focus-within .nav-dropdown-menu,
+.group\/nav-dropdown:hover:not(.dropdown-dismissed) .nav-dropdown-menu,
+.group\/nav-dropdown:focus-within:not(.dropdown-dismissed) .nav-dropdown-menu,
 .nav-dropdown-menu.dropdown-open {
   opacity: 1;
   visibility: visible;
@@ -1259,7 +1413,7 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
   pointer-events: auto;
 }
 
-.group\/nav-dropdown:hover .dropdown-chevron,
+.group\/nav-dropdown:hover:not(.dropdown-dismissed) .dropdown-chevron,
 .nav-dropdown-trigger[aria-expanded="true"] .dropdown-chevron {
   transform: rotate(180deg);
 }

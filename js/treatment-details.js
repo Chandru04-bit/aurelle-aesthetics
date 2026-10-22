@@ -124,7 +124,23 @@
 
     // Sticky Booking Summary Card
     const bookingPrice = document.getElementById('booking-card-price');
-    if (bookingPrice) bookingPrice.textContent = treatment.priceFormatted;
+    if (bookingPrice) {
+      const unitSeparator = treatment.priceFormatted.lastIndexOf('/');
+      const priceAmount = unitSeparator >= 0
+        ? treatment.priceFormatted.slice(0, unitSeparator).trim()
+        : treatment.priceFormatted;
+      const priceAmountElement = document.createElement('span');
+      priceAmountElement.className = 'min-w-0 break-words font-serif text-2xl sm:text-3xl font-bold leading-tight text-aurelle-charcoal dark:text-aurelle-darktext';
+      priceAmountElement.textContent = priceAmount;
+      bookingPrice.replaceChildren(priceAmountElement);
+
+      if (unitSeparator >= 0) {
+        const priceUnitElement = document.createElement('span');
+        priceUnitElement.className = 'whitespace-nowrap text-sm text-stone-500 font-light';
+        priceUnitElement.textContent = treatment.priceFormatted.slice(unitSeparator).trim();
+        bookingPrice.append(priceUnitElement);
+      }
+    }
 
     const bookingBtn = document.getElementById('details-book-btn');
     if (bookingBtn) {

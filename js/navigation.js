@@ -83,7 +83,7 @@
     }
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1280 && mobileToggle?.getAttribute('aria-expanded') === 'true') {
+      if (window.innerWidth >= 1024 && mobileToggle?.getAttribute('aria-expanded') === 'true') {
         closeMenu();
       }
     });
@@ -94,23 +94,39 @@
     const homeDropdownContainer = document.getElementById('desktop-home-dropdown');
 
     if (homeDropdownBtn && homeDropdownMenu) {
+      const closeHomeDropdown = () => {
+        homeDropdownMenu.classList.remove('dropdown-open');
+        homeDropdownContainer?.classList.add('dropdown-dismissed');
+        homeDropdownBtn.setAttribute('aria-expanded', 'false');
+      };
+
+      const openHomeDropdown = () => {
+        homeDropdownContainer?.classList.remove('dropdown-dismissed');
+        homeDropdownMenu.classList.add('dropdown-open');
+        homeDropdownBtn.setAttribute('aria-expanded', 'true');
+      };
+
       homeDropdownBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const isOpen = homeDropdownMenu.classList.contains('dropdown-open');
         if (isOpen) {
-          homeDropdownMenu.classList.remove('dropdown-open');
-          homeDropdownBtn.setAttribute('aria-expanded', 'false');
+          closeHomeDropdown();
         } else {
-          homeDropdownMenu.classList.add('dropdown-open');
-          homeDropdownBtn.setAttribute('aria-expanded', 'true');
+          openHomeDropdown();
         }
+      });
+
+      homeDropdownContainer?.addEventListener('mouseenter', () => {
+        homeDropdownContainer.classList.remove('dropdown-dismissed');
+      });
+      homeDropdownContainer?.addEventListener('focusin', () => {
+        homeDropdownContainer.classList.remove('dropdown-dismissed');
       });
 
       // Close when clicking outside
       document.addEventListener('click', (e) => {
         if (!homeDropdownContainer || !homeDropdownContainer.contains(e.target)) {
-          homeDropdownMenu.classList.remove('dropdown-open');
-          homeDropdownBtn.setAttribute('aria-expanded', 'false');
+          closeHomeDropdown();
         }
       });
     }
@@ -141,7 +157,8 @@
         closeMenu();
         if (homeDropdownMenu) {
           homeDropdownMenu.classList.remove('dropdown-open');
-          if (homeDropdownBtn) homeDropdownBtn.setAttribute('aria-expanded', 'false');
+          homeDropdownContainer?.classList.add('dropdown-dismissed');
+          homeDropdownBtn?.setAttribute('aria-expanded', 'false');
         }
       }
     });

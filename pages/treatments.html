@@ -53,7 +53,7 @@
       </section>
 
       <!-- Clinical Categories Explorer -->
-      <section class="space-y-8">
+      <section class="treatment-category-section space-y-8">
         <div class="text-center max-w-2xl mx-auto">
           <span class="section-subtitle">Treatment Categories</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-normal text-aurelle-charcoal dark:text-white">Explore by Clinical Discipline</h2>
@@ -62,9 +62,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="treatment-category-grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch gap-5 sm:gap-6">
           <!-- Category 1: Injectables -->
-          <div class="card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
+          <div class="treatment-category-card card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
             <div class="relative h-44 overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://plus.unsplash.com/premium_photo-1771265141291-d2374cc5d04b?auto=format&fit=crop&w=700&q=80" 
@@ -77,20 +77,20 @@
                 Category 01
               </span>
             </div>
-            <div class="p-5 flex-1 flex flex-col gap-3">
-              <div class="flex-1 flex flex-col">
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Injectables & Facial Contouring</h3>
-                <p class="text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
+            <div class="treatment-category-content p-5 flex-1 flex flex-col gap-3">
+              <div class="treatment-category-copy flex-1 flex flex-col">
+                <h3 class="treatment-category-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Injectables & Facial Contouring</h3>
+                <p class="treatment-category-description text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
                   Precision neuromodulators and resilient hyaluronic acid fillers for natural expression smoothing and bone architecture restoration.
                 </p>
-                <div class="mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
+                <div class="treatment-category-bullets mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
                   <div>• Botox® / Dysport® / Xeomin®</div>
                   <div>• Jawline, Cheeks & Lip Sculpting</div>
                 </div>
               </div>
               <button 
                 type="button" 
-                class="btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
+                class="treatment-category-cta btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
                 data-category-select="injectables"
               >
                 View Injectables
@@ -99,7 +99,7 @@
           </div>
 
           <!-- Category 2: Laser & RF -->
-          <div class="card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
+          <div class="treatment-category-card card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
             <div class="relative h-44 overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://plus.unsplash.com/premium_photo-1661573297404-d558c113a7d8?auto=format&fit=crop&w=700&q=80" 
@@ -112,20 +112,20 @@
                 Category 02
               </span>
             </div>
-            <div class="p-5 flex-1 flex flex-col gap-3">
-              <div class="flex-1 flex flex-col">
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Laser & RF Remodeling</h3>
-                <p class="text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
+            <div class="treatment-category-content p-5 flex-1 flex flex-col gap-3">
+              <div class="treatment-category-copy flex-1 flex flex-col">
+                <h3 class="treatment-category-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Laser & RF Remodeling</h3>
+                <p class="treatment-category-description text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
                   State-of-the-art radiofrequency microneedling, hybrid fractional lasers, and IPL for skin tightening, scar revision, and tone clarity.
                 </p>
-                <div class="mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
+                <div class="treatment-category-bullets mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
                   <div>• Morpheus8 Subdermal Remodeling</div>
                   <div>• Dual-Wave Fractional Resurfacing</div>
                 </div>
               </div>
               <button 
                 type="button" 
-                class="btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
+                class="treatment-category-cta btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
                 data-category-select="laser-rf"
               >
                 View Laser & RF
@@ -134,7 +134,7 @@
           </div>
 
           <!-- Category 3: Skin Rejuvenation -->
-          <div class="card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
+          <div class="treatment-category-card card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
             <div class="relative h-44 overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://plus.unsplash.com/premium_photo-1674841252366-162fc9b8f983?auto=format&fit=crop&w=700&q=80" 
@@ -147,20 +147,20 @@
                 Category 03
               </span>
             </div>
-            <div class="p-5 flex-1 flex flex-col gap-3">
-              <div class="flex-1 flex flex-col">
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Autologous Skin Rejuvenation</h3>
-                <p class="text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
+            <div class="treatment-category-content p-5 flex-1 flex flex-col gap-3">
+              <div class="treatment-category-copy flex-1 flex flex-col">
+                <h3 class="treatment-category-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Autologous Skin Rejuvenation</h3>
+                <p class="treatment-category-description text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
                   Concentrated platelet-rich plasma (PRP) growth factor therapies to repair dermal collagen, thicken under-eye skin, and restore bounce.
                 </p>
-                <div class="mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
+                <div class="treatment-category-bullets mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
                   <div>• PRP Cellular Glow Therapy</div>
                   <div>• Under-Eye Dermal Bio-Stimulation</div>
                 </div>
               </div>
               <button 
                 type="button" 
-                class="btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
+                class="treatment-category-cta btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
                 data-category-select="skin-rejuvenation"
               >
                 View Rejuvenation
@@ -169,7 +169,7 @@
           </div>
 
           <!-- Category 4: Peels & Facials -->
-          <div class="card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
+          <div class="treatment-category-card card-luxury overflow-hidden flex flex-col group hover:-translate-y-1 transition-all duration-300">
             <div class="relative h-44 overflow-hidden bg-stone-100 dark:bg-stone-800">
               <img 
                 src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" 
@@ -182,20 +182,20 @@
                 Category 04
               </span>
             </div>
-            <div class="p-5 flex-1 flex flex-col gap-3">
-              <div class="flex-1 flex flex-col">
-                <h3 class="font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Peels & Medical Facials</h3>
-                <p class="text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
+            <div class="treatment-category-content p-5 flex-1 flex flex-col gap-3">
+              <div class="treatment-category-copy flex-1 flex flex-col">
+                <h3 class="treatment-category-title font-serif text-lg font-medium text-aurelle-charcoal dark:text-white">Peels & Medical Facials</h3>
+                <p class="treatment-category-description text-xs text-stone-600 dark:text-stone-300 font-light mt-1.5 leading-relaxed">
                   Medical-grade multi-acid chemical peels and hydrodynamic vortex hydra-infusions for deep pore cleansing and red-carpet luminosity.
                 </p>
-                <div class="mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
+                <div class="treatment-category-bullets mt-auto pt-3 text-[11px] text-stone-500 dark:text-stone-400 space-y-1">
                   <div>• Medical TCA & Jessner Peel</div>
                   <div>• Aurelle Triple-Infusion Hydra Facial</div>
                 </div>
               </div>
               <button 
                 type="button" 
-                class="btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
+                class="treatment-category-cta btn-secondary text-xs py-2 px-3 w-full text-center font-medium"
                 data-category-select="peels-facials"
               >
                 View Peels & Facials
