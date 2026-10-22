@@ -1132,6 +1132,7 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
 }
 
 .home2-treatment-card-content {
+  padding: 1.25rem;
   gap: 1rem;
 }
 
@@ -1145,8 +1146,16 @@ body.auth-page #main-header nav[aria-label="Main Navigation"] {
 }
 
 .home2-treatment-title {
-  min-height: 3.5rem;
+  font-size: clamp(0.95rem, 1.1vw, 1.125rem);
   line-height: 1.35;
+  letter-spacing: -0.015em;
+  min-height: 1.8rem;
+}
+
+@media (min-width: 1280px) {
+  .home2-treatment-title {
+    white-space: nowrap;
+  }
 }
 
 .home2-treatment-description {
