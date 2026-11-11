@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/aurelle-monogram.svg">
   <title>Client Sign In | Aurelle Aesthetics Portal</title>
   <meta name="description" content="Sign in to your Aurelle Aesthetics client portal to manage appointments, track treatment packages, and view personalized skincare regimens.">
   
@@ -13,7 +14,7 @@
   
   <!-- Styles -->
   <link rel="stylesheet" href="../css/output.css">
-  <link rel="stylesheet" href="../css/custom.css?v=mobile-nav-fix-5">
+  <link rel="stylesheet" href="../css/custom.css?v=login-brand-lockup-1">
   <link rel="stylesheet" href="../css/responsive.css">
   <link rel="stylesheet" href="../css/themes.css">
 
@@ -24,7 +25,17 @@
   <!-- Shared Navbar -->
   <div id="navbar-placeholder"></div>
 
-  <main id="main-content" class="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <main id="main-content" class="flex-1 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center space-x-2 text-xs text-stone-500 dark:text-stone-400 mb-6" aria-label="Breadcrumb">
+      <a href="../index.html" class="hover:text-aurelle-gold transition-colors inline-flex items-center gap-1">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        <span>Home</span>
+      </a>
+      <span class="text-stone-400 dark:text-stone-600">&rsaquo;</span>
+      <span class="text-aurelle-charcoal dark:text-aurelle-gold font-medium">Sign In</span>
+    </nav>
+
     <div class="w-full max-w-md space-y-8">
       
       <!-- Card Container -->
@@ -32,8 +43,14 @@
         
         <!-- Header & Logo -->
         <div class="text-center space-y-2">
-          <div class="w-12 h-12 rounded-full border border-aurelle-gold flex items-center justify-center mx-auto bg-stone-50 dark:bg-stone-800">
-            <span class="font-serif text-xl font-bold text-aurelle-charcoal dark:text-aurelle-gold">A</span>
+          <div class="login-brand-lockup mb-2" role="img" aria-label="Aurelle Aesthetics, Med Spa">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-stone-100">
+              <img src="../assets/icons/aurelle-monogram.svg" alt="" width="44" height="44" class="h-11 w-11 object-contain">
+            </span>
+            <span class="login-brand-wordmark">
+              <span class="login-brand-name">Aurelle</span>
+              <span class="login-brand-tagline">Aesthetics &bull; Med Spa</span>
+            </span>
           </div>
           <h1 class="font-serif text-2xl sm:text-3xl font-normal text-aurelle-charcoal dark:text-white">Client Portal Sign In</h1>
           <p class="text-xs text-stone-500 dark:text-stone-400 font-light">Access appointments, treatment history, and tailored routines.</p>

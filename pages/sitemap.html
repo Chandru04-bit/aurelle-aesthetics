@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/aurelle-monogram.svg">
   <title>Sitemap | Aurelle Aesthetics</title>
   <meta name="description" content="Browse the pages and services available at Aurelle Aesthetics.">
   <link rel="stylesheet" href="../css/output.css">
@@ -13,12 +14,57 @@
 </head>
 <body class="bg-[#FAF8F4] dark:bg-[#161715] text-[#292A27] dark:text-[#FAF8F4] antialiased">
   <div id="navbar-placeholder"></div>
-  <main class="min-h-screen px-6 py-16 sm:px-8">
-    <div class="mx-auto max-w-4xl">
-      <span class="section-subtitle">Aurelle Aesthetics</span>
-      <h1 class="section-title">Website Sitemap</h1>
-      <div class="mt-10 grid gap-10 sm:grid-cols-3">
-        <section>
+  <main id="main-content" class="min-h-screen">
+
+    <!-- Standardized Page Hero -->
+    <section class="page-hero" aria-label="Website Sitemap Hero">
+            <!-- High-End Clinical Sanctuary Photographic Background & Translucent Luxury Overlay -->
+      <div class="page-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1512290900672-1f02e70e4e75?auto=format&fit=crop&w=2000&q=80" alt="Aurelle Aesthetics Directory" loading="eager" fetchpriority="high">
+        <div class="page-hero-overlay"></div>
+      </div>
+
+<div class="page-hero-glow-1"></div>
+      <div class="page-hero-glow-2"></div>
+      <div class="page-hero-pattern"></div>
+
+      <div class="page-hero-container">
+        <div class="page-hero-content max-w-3xl mx-auto text-center flex flex-col items-center">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html" class="hover:text-aurelle-gold transition-colors inline-flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              <span>Home</span>
+            </a>
+            <span class="page-hero-breadcrumb-separator">&rsaquo;</span>
+            <span class="page-hero-breadcrumb-current">Sitemap</span>
+          </nav>
+
+          <div class="page-hero-badge">
+            <span class="page-hero-badge-dot"></span>
+            <span>Aurelle Aesthetics Directory</span>
+          </div>
+
+          <h1 class="page-hero-title">
+            Website Sitemap
+          </h1>
+
+          <p class="page-hero-desc">
+            Explore our curated directory of clinical treatments, physician specialist profiles, patient booking portals, and clinical governance standards.
+          </p>
+
+          <div class="page-hero-divider">
+            <span class="page-hero-divider-line"></span>
+            <span class="page-hero-divider-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Body Content -->
+    <div class="py-14 sm:py-20">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 sm:grid-cols-3">
+        <section class="card-luxury p-6 sm:p-8">
           <h2 class="footer-heading text-xs font-semibold uppercase tracking-[0.18em]">Explore</h2>
           <ul class="mt-5 space-y-3">
             <li><a class="footer-link" href="../index.html">Home</a></li>
@@ -29,7 +75,7 @@
             <li><a class="footer-link" href="./contact.html">Contact</a></li>
           </ul>
         </section>
-        <section>
+        <section class="card-luxury p-6 sm:p-8">
           <h2 class="footer-heading text-xs font-semibold uppercase tracking-[0.18em]">Appointments &amp; Account</h2>
           <ul class="mt-5 space-y-3">
             <li><a class="footer-link" href="./booking.html">Book Appointment</a></li>
@@ -38,7 +84,7 @@
             <li><a class="footer-link" href="./register.html">Create Account</a></li>
           </ul>
         </section>
-        <section>
+        <section class="card-luxury p-6 sm:p-8">
           <h2 class="footer-heading text-xs font-semibold uppercase tracking-[0.18em]">Legal &amp; Clinical Safety</h2>
           <ul class="mt-5 space-y-3">
             <li><a class="footer-link" href="./privacy.html">Privacy Policy</a></li>
@@ -47,6 +93,7 @@
           </ul>
         </section>
       </div>
+    </div>
     </div>
   </main>
 

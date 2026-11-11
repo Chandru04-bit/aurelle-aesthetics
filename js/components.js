@@ -91,7 +91,7 @@
                   <span class="hidden sm:block text-[9px] tracking-[0.25em] uppercase text-stone-500 dark:text-aurelle-sage font-medium -mt-1">Aesthetics &bull; Med Spa</span>
                 </div>
               </a>
-              <nav class="hidden lg:flex flex-1 items-center justify-center gap-3 2xl:gap-5 px-3" aria-label="Main Navigation">
+              <nav class="navbar-desktop-navigation hidden xl:flex flex-1 items-center justify-center gap-3 2xl:gap-5 px-3" aria-label="Main Navigation">
                 <div class="relative group/nav-dropdown inline-block" id="desktop-home-dropdown">
                   <button type="button" class="nav-link nav-dropdown-trigger inline-flex items-center gap-1 text-sm font-medium tracking-wide text-aurelle-charcoal/80 hover:text-aurelle-gold dark:text-aurelle-darktext/80 dark:hover:text-aurelle-gold transition-colors duration-200 focus:outline-none" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
                     <span>Welcome</span>
@@ -99,8 +99,8 @@
                   </button>
                   <div class="nav-dropdown-menu absolute left-0 top-full pt-2" id="home-dropdown-menu" role="menu" aria-labelledby="home-dropdown-btn">
                     <div class="bg-white dark:bg-aurelle-darkcard rounded-2xl shadow-lg border border-stone-200/80 dark:border-aurelle-darkborder p-2 space-y-1">
-                      <a href="${indexPath}" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Home 1</span></a>
-                      <a href="${pagesPath}home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Home 2 (Signature)</span></a>
+                      <a href="${indexPath}" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Welcome</span></a>
+                      <a href="${pagesPath}home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Harmonic Radiance</span></a>
                     </div>
                   </div>
                 </div>
@@ -121,7 +121,7 @@
                 <a href="${pagesPath}dashboard.html" class="nav-dashboard-btn inline-flex h-10 items-center justify-center px-5 text-xs font-semibold tracking-wider uppercase transition-all duration-300 rounded-full border border-stone-300 dark:border-aurelle-darkborder text-aurelle-charcoal hover:border-aurelle-gold hover:text-aurelle-gold dark:text-aurelle-darktext dark:hover:border-aurelle-gold dark:hover:text-aurelle-gold shadow-sm focus:outline-none focus:ring-2 focus:ring-aurelle-gold">Dashboard</a>
                 <a href="${pagesPath}login.html" class="nav-login-btn inline-flex h-10 items-center justify-center px-5 text-xs font-semibold tracking-wider uppercase transition-all duration-300 rounded-full border border-transparent bg-aurelle-charcoal text-white hover:bg-black hover:shadow-luxury dark:bg-aurelle-ivory dark:text-aurelle-charcoal dark:hover:bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-aurelle-gold">Login</a>
               </div>
-              <div class="navbar-mobile-controls flex shrink-0 items-center lg:hidden">
+              <div class="navbar-mobile-controls flex shrink-0 items-center xl:hidden">
                 <button id="mobile-menu-toggle" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100 dark:hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-aurelle-gold" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open main navigation menu">
                   <svg class="w-6 h-6 menu-open-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" /></svg>
                   <svg class="w-6 h-6 menu-close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12" /></svg>
@@ -130,8 +130,8 @@
             </div>
           </div>
         </header>
-          <div id="mobile-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 lg:hidden"></div>
-          <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-aurelle-ivory dark:bg-aurelle-darkcard z-50 shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 lg:hidden" aria-hidden="true">
+          <div id="mobile-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300 xl:hidden"></div>
+          <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-aurelle-ivory dark:bg-aurelle-darkcard z-50 shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300 xl:hidden" aria-hidden="true">
             <div>
               <div class="flex items-center justify-between pb-6 border-b border-stone-200 dark:border-aurelle-darkborder">
                 <div class="flex items-center gap-2">
@@ -149,8 +149,8 @@
                     <svg class="w-4 h-4 transition-transform duration-200 mobile-home-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                   </button>
                   <div id="mobile-home-submenu" class="hidden pl-3 pt-1 pb-1 space-y-1">
-                    <a href="${indexPath}" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Home 1</a>
-                    <a href="${pagesPath}home-2.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Home 2 (Signature)</a>
+                    <a href="${indexPath}" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Welcome</a>
+                    <a href="${pagesPath}home-2.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Harmonic Radiance</a>
                   </div>
                 </div>
                 <a href="${pagesPath}treatments.html" class="nav-link text-base font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:text-aurelle-gold py-2 border-b border-stone-100 dark:border-stone-800">Treatments</a>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/aurelle-monogram.svg">
   <title>Book an Appointment | Aurelle Aesthetics Med Spa</title>
   <meta name="description" content="Reserve your bespoke aesthetic appointment with our master physicians and specialists. Seamless 5-step online booking.">
   
@@ -24,19 +25,59 @@
   <!-- Shared Navbar -->
   <div id="navbar-placeholder"></div>
 
-  <main id="main-content" class="min-h-screen py-10 sm:py-14">
-    <div id="booking-wizard-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Stepper Header -->
-      <div class="max-w-3xl mx-auto text-center mb-10">
-        <span class="section-subtitle">Online Concierge</span>
-        <h1 class="section-title">Schedule Your Aesthetic Visit</h1>
-        <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-light mt-2">
-          Demo Booking Portal &bull; Availability and appointment slots are simulated for demonstration.
-        </p>
+  <main id="main-content" class="min-h-screen">
 
+    <!-- Standardized Page Hero -->
+    <section class="page-hero" aria-label="Appointment Booking Hero">
+            <!-- High-End Clinical Sanctuary Photographic Background & Translucent Luxury Overlay -->
+      <div class="page-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=2000&q=80" alt="Aurelle Aesthetics Concierge & Consultation Lounge" loading="eager" fetchpriority="high">
+        <div class="page-hero-overlay"></div>
+      </div>
+
+<div class="page-hero-glow-1"></div>
+      <div class="page-hero-glow-2"></div>
+      <div class="page-hero-pattern"></div>
+
+      <div class="page-hero-container">
+        <div class="page-hero-content max-w-3xl mx-auto text-center flex flex-col items-center">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html" class="hover:text-aurelle-gold transition-colors inline-flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              <span>Home</span>
+            </a>
+            <span class="page-hero-breadcrumb-separator">&rsaquo;</span>
+            <span class="page-hero-breadcrumb-current">Book Appointment</span>
+          </nav>
+
+          <div class="page-hero-badge">
+            <span class="page-hero-badge-dot"></span>
+            <span>Online Concierge</span>
+          </div>
+
+          <h1 class="page-hero-title">
+            Schedule Your Aesthetic Visit
+          </h1>
+
+          <p class="page-hero-desc">
+            Reserve your bespoke aesthetic appointment with our master physicians and specialists. Demo Booking Portal &bull; Availability and appointment slots are simulated for demonstration.
+          </p>
+
+          <div class="page-hero-divider">
+            <span class="page-hero-divider-line"></span>
+            <span class="page-hero-divider-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Body Content -->
+    <div class="py-12 sm:py-16">
+      <div id="booking-wizard-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <!-- 5-Step Stepper Progress Bar -->
-        <div class="mt-8 flex items-center justify-between max-w-xl mx-auto px-2" aria-label="Booking Progress Steps">
+        <div class="mb-10 max-w-xl mx-auto px-2" aria-label="Booking Progress Steps">
+          <div class="flex items-center justify-between">
           
           <div class="step-item active" data-step="1">
             <div class="step-circle">1</div>
@@ -282,6 +323,7 @@
 
       </div>
 
+    </div>
     </div>
   </main>
 

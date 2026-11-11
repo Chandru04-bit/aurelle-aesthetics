@@ -83,7 +83,7 @@
     }
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1024 && mobileToggle?.getAttribute('aria-expanded') === 'true') {
+      if (window.innerWidth >= 1280 && mobileToggle?.getAttribute('aria-expanded') === 'true') {
         closeMenu();
       }
     });

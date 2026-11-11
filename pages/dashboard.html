@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/aurelle-monogram.svg">
   <title>Client Portal & Dashboard | Aurelle Aesthetics</title>
   <meta name="description" content="Manage your upcoming med spa visits, reschedule appointments, review treatment packages, and access your custom skincare routine.">
   
@@ -24,10 +25,57 @@
   <!-- Shared Navbar -->
   <div id="navbar-placeholder"></div>
 
-  <main id="main-content" class="min-h-screen py-10 sm:py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Dashboard User Banner -->
+  <main id="main-content" class="min-h-screen">
+
+    <!-- Standardized Page Hero -->
+    <section class="page-hero" aria-label="Client Portal Hero">
+            <!-- High-End Clinical Sanctuary Photographic Background & Translucent Luxury Overlay -->
+      <div class="page-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1512290900672-1f02e70e4e75?auto=format&fit=crop&w=2000&q=80" alt="Aurelle Aesthetics Patient Care Suite" loading="eager" fetchpriority="high">
+        <div class="page-hero-overlay"></div>
+      </div>
+
+<div class="page-hero-glow-1"></div>
+      <div class="page-hero-glow-2"></div>
+      <div class="page-hero-pattern"></div>
+
+      <div class="page-hero-container">
+        <div class="page-hero-content max-w-3xl mx-auto text-center flex flex-col items-center">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html" class="hover:text-aurelle-gold transition-colors inline-flex items-center gap-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              <span>Home</span>
+            </a>
+            <span class="page-hero-breadcrumb-separator">&rsaquo;</span>
+            <span class="page-hero-breadcrumb-current">Client Portal</span>
+          </nav>
+
+          <div class="page-hero-badge">
+            <span class="page-hero-badge-dot"></span>
+            <span>Aurelle VIP Sanctuary</span>
+          </div>
+
+          <h1 class="page-hero-title">
+            Client Portal &amp; Concierge Hub
+          </h1>
+
+          <p class="page-hero-desc">
+            Manage your upcoming aesthetic appointments, review clinical treatment packages, and access your bespoke physician-tailored skincare regimen.
+          </p>
+
+          <div class="page-hero-divider">
+            <span class="page-hero-divider-line"></span>
+            <span class="page-hero-divider-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Body Content -->
+    <div class="py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Dashboard User Banner -->
       <div class="dashboard-user-banner card-luxury p-6 sm:p-8 mb-10 bg-white dark:bg-aurelle-darkcard shadow-soft flex flex-col lg:flex-row lg:items-center justify-between gap-6">
         <div class="dashboard-user-profile flex items-center gap-4">
           <div class="w-16 h-16 rounded-full border-2 border-aurelle-gold overflow-hidden bg-stone-100 dark:bg-stone-800 shrink-0">
@@ -248,6 +296,7 @@
         </div>
       </div>
 
+    </div>
     </div>
   </main>
 
