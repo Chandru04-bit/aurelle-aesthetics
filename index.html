@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="./assets/icons/aurelle-monogram.svg">
+  <link rel="alternate icon" type="image/x-icon" href="./assets/icons/favicon.ico">
   <title>AURELLE AESTHETICS | Premium Med Spa & Non-Surgical Aesthetics Clinic</title>
   <meta name="description" content="Aurelle Aesthetics is a premier medical spa specializing in physician-led facial balancing, wrinkle relaxers, dermal fillers, and advanced skin rejuvenation.">
   
@@ -721,44 +722,62 @@
       </div>
     </section>
 
-    <!-- FAQ Accordion Section -->
-    <section class="py-20 lg:py-28 bg-[#FAF8F4]/50 dark:bg-[#1A1B18] border-t border-stone-200/60 dark:border-aurelle-darkborder transition-colors">
+    <!-- FAQ Accordion Section (Common Enquiries) -->
+    <section class="py-24 lg:py-32 bg-[#FAF8F4]/60 dark:bg-[#1A1B18] border-t border-stone-200/60 dark:border-aurelle-darkborder transition-colors" aria-labelledby="faq-section-heading">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-2xl mx-auto mb-14">
-          <span class="section-subtitle">Common Inquiries</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="section-subtitle">Common Enquiries</span>
+          <h2 id="faq-section-heading" class="section-title">Frequently Asked Questions</h2>
+          <div class="w-12 h-0.5 bg-aurelle-gold mx-auto my-3"></div>
+          <p class="text-stone-600 dark:text-stone-300 text-xs sm:text-sm font-light leading-relaxed">
+            Transparent guidance regarding treatment selection, procedural comfort, clinical downtime, and provider credentials.
+          </p>
         </div>
 
-        <div class="space-y-4" data-accordion-group>
+        <div class="space-y-5" data-accordion-group>
           
-          <div class="accordion-item border border-stone-200 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft">
-            <button type="button" class="accordion-header w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="true">
+          <!-- FAQ 1 -->
+          <div class="accordion-item border border-stone-200/80 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft transition-all duration-200 hover:border-aurelle-gold/40">
+            <button type="button" class="accordion-header w-full px-6 sm:px-8 py-5 sm:py-6 text-left flex items-center justify-between gap-4 focus:outline-none transition-colors" aria-expanded="true">
               <span class="font-serif text-base sm:text-lg text-aurelle-charcoal dark:text-aurelle-darktext font-medium">How do I choose between Botox and Dermal Fillers?</span>
-              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0 rotated" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0 rotated transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="accordion-content open px-6 pb-6 text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50 pt-4">
+            <div class="accordion-content open px-6 sm:px-8 pb-7 pt-4 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50">
               Neurotoxins (Botox) relax dynamic muscle contractions that create forehead lines and crow’s feet. Dermal fillers restore lost volume in cheeks, lips, and jawlines using smooth hyaluronic acid gel. During your initial consultation, we design a balanced combination if indicated.
             </div>
           </div>
 
-          <div class="accordion-item border border-stone-200 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft">
-            <button type="button" class="accordion-header w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <!-- FAQ 2 -->
+          <div class="accordion-item border border-stone-200/80 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft transition-all duration-200 hover:border-aurelle-gold/40">
+            <button type="button" class="accordion-header w-full px-6 sm:px-8 py-5 sm:py-6 text-left flex items-center justify-between gap-4 focus:outline-none transition-colors" aria-expanded="false">
               <span class="font-serif text-base sm:text-lg text-aurelle-charcoal dark:text-aurelle-darktext font-medium">Is there significant downtime with Morpheus8 or Laser Resurfacing?</span>
-              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="accordion-content px-6 pb-6 text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50 pt-4">
+            <div class="accordion-content px-6 sm:px-8 pb-7 pt-4 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50">
               Morpheus8 typically entails 2 to 3 days of mild pinkness and tiny micro-dots that easily conceal with mineral powder after 48 hours. Fractional laser treatments involve 3 to 5 days of light redness and flaking. We provide a complete soothing recovery kit.
             </div>
           </div>
 
-          <div class="accordion-item border border-stone-200 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft">
-            <button type="button" class="accordion-header w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <!-- FAQ 3 -->
+          <div class="accordion-item border border-stone-200/80 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft transition-all duration-200 hover:border-aurelle-gold/40">
+            <button type="button" class="accordion-header w-full px-6 sm:px-8 py-5 sm:py-6 text-left flex items-center justify-between gap-4 focus:outline-none transition-colors" aria-expanded="false">
               <span class="font-serif text-base sm:text-lg text-aurelle-charcoal dark:text-aurelle-darktext font-medium">What is your cancellation and rescheduling policy?</span>
-              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div class="accordion-content px-6 pb-6 text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50 pt-4">
+            <div class="accordion-content px-6 sm:px-8 pb-7 pt-4 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50">
               We kindly request 48 hours notice for rescheduling or cancellations to allow other clients access to specialized provider time slots. You can manage, reschedule, or cancel bookings effortlessly through your online client dashboard.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item border border-stone-200/80 dark:border-aurelle-darkborder rounded-2xl bg-white dark:bg-aurelle-darkcard overflow-hidden shadow-soft transition-all duration-200 hover:border-aurelle-gold/40">
+            <button type="button" class="accordion-header w-full px-6 sm:px-8 py-5 sm:py-6 text-left flex items-center justify-between gap-4 focus:outline-none transition-colors" aria-expanded="false">
+              <span class="font-serif text-base sm:text-lg text-aurelle-charcoal dark:text-aurelle-darktext font-medium">What can I expect during my initial 45-minute clinical consultation?</span>
+              <svg class="accordion-chevron w-5 h-5 text-aurelle-gold shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="accordion-content px-6 sm:px-8 pb-7 pt-4 text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-light leading-relaxed border-t border-stone-100 dark:border-aurelle-darkborder/50">
+              Your consultation includes deep multi-spectral skin imaging, dynamic muscle mapping, vascular ultrasound assessment, and an unhurried discussion of your aesthetic goals. We provide a transparent, tiered roadmap without pressure.
             </div>
           </div>
 
@@ -766,24 +785,85 @@
       </div>
     </section>
 
-    <!-- Appointment Booking CTA Banner -->
-    <section class="py-20 lg:py-24 bg-[#FAF8F4] dark:bg-[#161715] border-t border-stone-200/60 dark:border-aurelle-darkborder transition-colors">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-        <span class="section-subtitle">Begin Your Aesthetic Journey</span>
-        <h2 class="section-title">
-          Experience the Highest Standard of Clinical Grace.
-        </h2>
-        <p class="text-stone-600 dark:text-stone-300 text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed">
-          Book your private 1-on-1 consultation today. Meet with our master physicians and injectors to curate a bespoke rejuvenation roadmap.
-        </p>
-        <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="./pages/booking.html" class="btn-primary min-w-[220px] h-12 py-3.5 px-8 text-xs font-semibold tracking-wider uppercase rounded-full shadow-sm flex items-center justify-center">
-            Book Online Appointment
-          </a>
-          <a href="./pages/contact.html" class="btn-secondary min-w-[220px] h-12 py-3.5 px-8 text-xs font-semibold tracking-wider uppercase rounded-full flex items-center justify-center">
-            Contact Clinic Concierge
-          </a>
+    <!-- Appointment Booking CTA Banner (Final Section) -->
+    <section class="py-20 lg:py-28 bg-[#FAF8F4] dark:bg-[#161715] border-t border-stone-200/60 dark:border-aurelle-darkborder transition-colors relative overflow-hidden" aria-label="Book Consultation Closing Section">
+      
+      <!-- Subtle Decorative Background Glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[550px] bg-gradient-to-tr from-aurelle-gold/15 via-aurelle-blush/20 to-transparent dark:from-stone-900/60 dark:via-stone-800/30 dark:to-transparent rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Luxury Framed Sanctuary Card -->
+        <div class="rounded-3xl bg-[#1C1D1A] text-white overflow-hidden shadow-2xl border border-stone-700/60 relative">
+          
+          <!-- High-End Clinical Sanctuary Backdrop Overlay -->
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="./assets/images/about/hero-about-consultation.jpg" 
+              alt="Aurelle Aesthetics Beverly Hills Sanctuary Suite" 
+              class="w-full h-full object-cover object-center opacity-25 filter brightness-90 contrast-105"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1C1D1A] via-[#1C1D1A]/95 to-[#1C1D1A]/85"></div>
+          </div>
+
+          <div class="relative z-10 p-8 sm:p-14 lg:p-20 text-center space-y-7">
+            
+            <!-- Eyebrow Badge with Pulsing Gold Dot -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-800/90 border border-aurelle-gold/40 text-aurelle-gold text-[11px] font-semibold tracking-widest uppercase shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-aurelle-gold animate-pulse"></span>
+              <span>BEVERLY HILLS SANCTUARY &bull; PRIVATE CONSULTATION</span>
+            </div>
+
+            <!-- Primary Headline -->
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-white max-w-3xl mx-auto">
+              Experience the Highest Standard of Clinical Grace.
+            </h2>
+
+            <!-- Supporting Description -->
+            <p class="text-stone-300 text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed">
+              Book your private 1-on-1 consultation today. Meet with our master physicians and injectors to curate a bespoke rejuvenation roadmap.
+            </p>
+
+            <!-- Dual Action CTA Buttons (Standardized Dimensions & Typography) -->
+            <div class="pt-2 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5">
+              <a href="./pages/booking.html" class="btn-primary min-w-[240px] h-12 py-3.5 px-8 text-xs font-semibold tracking-wider uppercase rounded-full shadow-luxury flex items-center justify-center bg-aurelle-gold text-aurelle-charcoal hover:bg-amber-300 transition-all duration-300">
+                BOOK ONLINE APPOINTMENT
+              </a>
+              <a href="./pages/contact.html" class="btn-secondary min-w-[240px] h-12 py-3.5 px-8 text-xs font-semibold tracking-wider uppercase rounded-full border border-stone-600 text-white hover:border-aurelle-gold hover:text-aurelle-gold transition-colors duration-300 flex items-center justify-center">
+                CONTACT CLINIC CONCIERGE
+              </a>
+            </div>
+
+            <!-- Clinical Trust Credentials Row -->
+            <div class="pt-8 border-t border-stone-800/90 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs text-stone-400 font-light">
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Board-Certified Directors
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Vascular Ultrasound Guided
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                Strict HIPAA Confidentiality
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-aurelle-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Dedicated 45-Min Sessions
+              </span>
+            </div>
+
+            <!-- Concierge Address & Telephone -->
+            <div class="text-[11px] text-stone-500 font-light tracking-wider">
+              9460 Wilshire Blvd, Suite 400, Beverly Hills, CA 90212 &bull; Direct: (555) 794-2026 &bull; Mon &ndash; Sat Appointments
+            </div>
+
+          </div>
+
         </div>
+
       </div>
     </section>
 

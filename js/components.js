@@ -83,8 +83,8 @@
           <div class="site-content-container">
             <div class="flex items-center justify-between h-20">
               <a href="${indexPath}" class="flex shrink-0 items-center gap-2 sm:gap-3 group focus:outline-none" aria-label="Aurelle Aesthetics Home">
-                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-aurelle-gold/60 flex items-center justify-center bg-white dark:bg-aurelle-darkcard shadow-sm transition-transform duration-300 group-hover:scale-105">
-                  <span class="font-serif text-base sm:text-lg font-bold text-aurelle-charcoal dark:text-aurelle-gold">A</span>
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-aurelle-gold/60 flex items-center justify-center bg-white dark:bg-aurelle-darkcard shadow-sm transition-transform duration-300 group-hover:scale-105 p-1 sm:p-1.5">
+                  <img src="${basePath}assets/icons/aurelle-monogram.svg" alt="Aurelle Aesthetics Emblem" class="w-full h-full object-contain" width="36" height="36">
                 </div>
                 <div class="flex flex-col">
                   <span class="font-serif text-lg sm:text-xl tracking-widest uppercase font-semibold text-aurelle-charcoal dark:text-aurelle-darktext group-hover:text-aurelle-gold transition-colors">Aurelle</span>
@@ -135,7 +135,9 @@
             <div>
               <div class="flex items-center justify-between pb-6 border-b border-stone-200 dark:border-aurelle-darkborder">
                 <div class="flex items-center gap-2">
-                  <div class="w-8 h-8 rounded-full border border-aurelle-gold flex items-center justify-center font-serif font-bold text-aurelle-charcoal dark:text-aurelle-gold">A</div>
+                  <div class="w-8 h-8 rounded-full border border-aurelle-gold/60 flex items-center justify-center p-1 bg-white dark:bg-stone-900 shadow-sm">
+                    <img src="${basePath}assets/icons/aurelle-monogram.svg" alt="" class="w-full h-full object-contain" width="24" height="24">
+                  </div>
                   <span class="font-serif tracking-wider uppercase font-semibold text-aurelle-charcoal dark:text-aurelle-darktext">Aurelle</span>
                 </div>
                 <button id="mobile-drawer-close" type="button" class="p-2 text-stone-500 hover:text-stone-900 dark:hover:text-white" aria-label="Close menu">
@@ -193,7 +195,9 @@
             <div class="site-footer-grid">
               <section class="site-footer-brand" aria-labelledby="footer-brand-name-fallback">
                 <a class="site-footer-logo" href="${indexPath}" aria-label="Aurelle Aesthetics home">
-                  <span class="site-footer-mark" aria-hidden="true">A</span>
+                  <span class="site-footer-mark p-1" aria-hidden="true">
+                    <img src="${basePath}assets/icons/aurelle-monogram.svg" alt="" class="w-full h-full object-contain" width="32" height="32">
+                  </span>
                   <span class="site-footer-wordmark" id="footer-brand-name-fallback">
                     <span class="site-footer-wordmark-name">Aurelle</span>
                     <span class="site-footer-wordmark-tagline">Aesthetics &bull; Med Spa</span>

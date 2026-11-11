@@ -312,6 +312,14 @@ html {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.125rem;
   font-weight: 700;
+  padding: 0.25rem;
+}
+
+.site-footer-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .site-footer-wordmark {
@@ -2185,4 +2193,83 @@ html {
 
 .dark .auth-page::after {
   background: radial-gradient(circle, rgba(47, 48, 44, 0.5) 0%, transparent 70%);
+}
+
+/* ========================================================
+   Standardized Luxury Button System
+   Consistent height (48px / 3rem), rounded-full, balanced padding,
+   refined typography, and unified light/dark hover states.
+   ======================================================== */
+.btn-primary,
+.btn-secondary,
+.btn-gold {
+  min-height: 3rem; /* 48px */
+  border-radius: 9999px;
+  font-size: 0.75rem; /* 12px */
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #292A27;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(41, 42, 39, 0.12);
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  box-shadow: 0 6px 20px rgba(41, 42, 39, 0.2);
+  transform: translateY(-1px);
+}
+
+.dark .btn-primary {
+  background-color: #FAF8F4;
+  color: #292A27;
+}
+
+.dark .btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #292A27;
+  border: 1px solid #292A27;
+}
+
+.btn-secondary:hover {
+  background-color: #292A27;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.dark .btn-secondary {
+  color: #FAF8F4;
+  border-color: #E9E0D5;
+}
+
+.dark .btn-secondary:hover {
+  background-color: #E9E0D5;
+  color: #292A27;
+}
+
+.btn-gold {
+  background-color: #C5A880;
+  color: #292A27;
+  border: 1px solid transparent;
+}
+
+.btn-gold:hover {
+  background-color: #DFC8A8;
+  color: #292A27;
+  transform: translateY(-1px);
 }
