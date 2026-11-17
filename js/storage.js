@@ -92,7 +92,7 @@ const SEED_TREATMENTS = [
     downtime: '1–2 days mild swelling',
     discomfort: 'Mild with topical numbing (2/5)',
     resultsLongevity: '9 to 18 Months',
-    image: 'https://plus.unsplash.com/premium_photo-1661769358914-1d33c22bd7ba?auto=format&fit=crop&w=900&q=80',
+    image: '../assets/images/treatments/Sculpt_and_contour_dermal_fillers_a31c8070.jpg',
     heroImage: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Cheekbone Architecture', 'Tear Trough Hollowing', 'Nasolabial Folds', 'Marionette Lines', 'Russian Lip Sculpting', 'Jawline & Chin'],
     conditionsTreated: [
