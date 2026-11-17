@@ -181,7 +181,6 @@
                   <a href="${pagesPath}dashboard.html" class="nav-dashboard-btn flex-1 text-center py-2.5 text-xs font-semibold tracking-wider uppercase rounded-full border border-stone-300 dark:border-aurelle-darkborder text-aurelle-charcoal dark:text-aurelle-darktext hover:border-aurelle-gold hover:text-aurelle-gold">Dashboard</a>
                   <a href="${pagesPath}login.html" class="mobile-login-btn flex-1 text-center py-2.5 text-xs font-semibold tracking-wider uppercase rounded-full border border-aurelle-charcoal dark:border-aurelle-beige text-aurelle-charcoal dark:text-aurelle-ivory bg-aurelle-charcoal text-white dark:bg-aurelle-ivory dark:text-aurelle-charcoal">Login</a>
                 </div>
-                <a href="${pagesPath}register.html" class="mobile-register-btn w-full text-center py-2.5 text-xs font-semibold tracking-wider uppercase rounded-full bg-stone-200/70 dark:bg-stone-800 text-aurelle-charcoal dark:text-aurelle-ivory">Create Account</a>
               </div>
             </div>
           </div>

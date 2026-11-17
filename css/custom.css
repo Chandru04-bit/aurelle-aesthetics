@@ -2305,3 +2305,11 @@ html {
 #wizard-submit-btn.hidden {
   display: none;
 }
+
+/* Keep the account creation page focused by hiding the main site navigation there. */
+.register-page .navbar-desktop-navigation,
+.register-page .navbar-mobile-controls,
+.login-page .navbar-desktop-navigation,
+.login-page .navbar-mobile-controls {
+  display: none !important;
+}
