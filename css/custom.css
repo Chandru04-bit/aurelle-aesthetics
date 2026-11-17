@@ -2300,3 +2300,8 @@ html {
   color: #292A27;
   transform: translateY(-1px);
 }
+
+/* Keep the booking wizard's inactive submit action hidden alongside its button styles. */
+#wizard-submit-btn.hidden {
+  display: none;
+}
