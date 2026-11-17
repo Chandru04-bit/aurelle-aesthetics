@@ -94,13 +94,13 @@
               <nav class="navbar-desktop-navigation hidden xl:flex flex-1 items-center justify-center gap-3 2xl:gap-5 px-3" aria-label="Main Navigation">
                 <div class="relative group/nav-dropdown inline-block" id="desktop-home-dropdown">
                   <button type="button" class="nav-link nav-dropdown-trigger inline-flex items-center gap-1 text-sm font-medium tracking-wide text-aurelle-charcoal/80 hover:text-aurelle-gold dark:text-aurelle-darktext/80 dark:hover:text-aurelle-gold transition-colors duration-200 focus:outline-none" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
-                    <span>Welcome</span>
+                    <span>Home</span>
                     <svg class="w-3.5 h-3.5 transition-transform duration-200 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                   </button>
                   <div class="nav-dropdown-menu absolute left-0 top-full pt-2" id="home-dropdown-menu" role="menu" aria-labelledby="home-dropdown-btn">
                     <div class="bg-white dark:bg-aurelle-darkcard rounded-2xl shadow-lg border border-stone-200/80 dark:border-aurelle-darkborder p-2 space-y-1">
-                      <a href="${indexPath}" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Welcome</span></a>
-                      <a href="${pagesPath}home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Harmonic Radiance</span></a>
+                      <a href="${indexPath}" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Aurelle Home</span></a>
+                      <a href="${pagesPath}home-2.html" class="nav-link nav-dropdown-link flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:bg-stone-100/80 dark:hover:bg-stone-800/80 hover:text-aurelle-gold dark:hover:text-aurelle-gold transition-colors duration-150" role="menuitem"><span>Our Clinical Approach</span></a>
                     </div>
                   </div>
                 </div>
@@ -147,12 +147,12 @@
               <nav class="flex flex-col space-y-4 py-6" aria-label="Mobile Navigation">
                 <div class="mobile-home-group border-b border-stone-100 dark:border-stone-800 pb-1">
                   <button type="button" class="w-full flex items-center justify-between py-2 text-base font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:text-aurelle-gold focus:outline-none mobile-home-toggle" id="mobile-home-toggle" aria-expanded="false" aria-controls="mobile-home-submenu">
-                    <span>Welcome</span>
+                    <span>Home</span>
                     <svg class="w-4 h-4 transition-transform duration-200 mobile-home-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                   </button>
                   <div id="mobile-home-submenu" class="hidden pl-3 pt-1 pb-1 space-y-1">
-                    <a href="${indexPath}" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Welcome</a>
-                    <a href="${pagesPath}home-2.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Harmonic Radiance</a>
+                    <a href="${indexPath}" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Aurelle Home</a>
+                    <a href="${pagesPath}home-2.html" class="nav-link mobile-sub-link block px-3 py-2 text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-aurelle-gold dark:hover:text-aurelle-gold rounded-lg transition-colors">Our Clinical Approach</a>
                   </div>
                 </div>
                 <a href="${pagesPath}treatments.html" class="nav-link text-base font-medium text-aurelle-charcoal dark:text-aurelle-darktext hover:text-aurelle-gold py-2 border-b border-stone-100 dark:border-stone-800">Treatments</a>

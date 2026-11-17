@@ -32,7 +32,7 @@ const SEED_TREATMENTS = [
     discomfort: 'Minimal (1/5)',
     resultsLongevity: '3 to 5 Months',
     image: 'https://plus.unsplash.com/premium_photo-1771265141291-d2374cc5d04b?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1771265141291-d2374cc5d04b?auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Forehead Lines', 'Glabellar Frown Lines (11s)', 'Crow’s Feet', 'Masseter / Jaw Slimming', 'Lip Flip', 'Neck Bands'],
     conditionsTreated: [
       'Dynamic Forehead Lines',
@@ -93,7 +93,7 @@ const SEED_TREATMENTS = [
     discomfort: 'Mild with topical numbing (2/5)',
     resultsLongevity: '9 to 18 Months',
     image: 'https://plus.unsplash.com/premium_photo-1661769358914-1d33c22bd7ba?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1661769358914-1d33c22bd7ba?auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Cheekbone Architecture', 'Tear Trough Hollowing', 'Nasolabial Folds', 'Marionette Lines', 'Russian Lip Sculpting', 'Jawline & Chin'],
     conditionsTreated: [
       'Mid-Face Volume Loss & Cheek Flattening',
@@ -150,7 +150,7 @@ const SEED_TREATMENTS = [
     discomfort: 'Moderate (2.5/5)',
     resultsLongevity: 'Long-lasting (12+ Months with SPF)',
     image: 'https://plus.unsplash.com/premium_photo-1661573078797-2126237e4de7?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1661573078797-2126237e4de7?auto=format&fit=crop&w=1400&q=80',
+    heroImage: '../assets/images/treatments/laser-resurfacing-hd.jpg',
     targetAreas: ['Full Face', 'Neck & Décolletage', 'Hands', 'Acne Scar Zones'],
     conditionsTreated: [
       'Stubborn Solar Lentigines & Sun Spots',
@@ -202,8 +202,8 @@ const SEED_TREATMENTS = [
     downtime: '2–3 days mild erythema',
     discomfort: 'Tolerable with compounded numbing (3/5)',
     resultsLongevity: '18 to 24 Months',
-    image: 'https://plus.unsplash.com/premium_photo-1661573297404-d558c113a7d8?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1661573297404-d558c113a7d8?auto=format&fit=crop&w=1400&q=80',
+    image: '../assets/images/treatments/RF_microneedling_skin_tightening_e2242dc6.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Lower Face & Jowls', 'Submental / Double Chin Area', 'Neck & Chest', 'Periorbital Fine Lines'],
     conditionsTreated: [
       'Lower Face & Jowl Laxity',
@@ -253,8 +253,8 @@ const SEED_TREATMENTS = [
     downtime: '3–5 days light flaking',
     discomfort: 'Mild tingling (1.5/5)',
     resultsLongevity: '2 to 3 Months per Peel',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=80',
+    image: '../assets/images/contact/hero-contact-hd.jpg',
+    heroImage: 'https://plus.unsplash.com/premium_photo-1664299134229-8a98c99de63b?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Full Face', 'Chest / Décolletage', 'Upper Back / Shoulders'],
     conditionsTreated: [
       'Cellular Keratin Buildup & Chronic Dullness',
@@ -303,8 +303,8 @@ const SEED_TREATMENTS = [
     downtime: 'Zero (Immediate Red-Carpet Glow)',
     discomfort: 'Completely relaxing (0/5)',
     resultsLongevity: '3 to 4 Weeks',
-    image: 'https://plus.unsplash.com/premium_photo-1675502957609-25148d769841?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1675502957609-25148d769841?auto=format&fit=crop&w=1400&q=80',
+    image: 'https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?auto=format&fit=crop&w=900&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1761718210089-ba3bb5ccb54f?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Full Face', 'Under-eye Area', 'Neck & Jawline'],
     conditionsTreated: [
       'Acute Dehydration & Parched Moisture Barrier',
@@ -352,7 +352,7 @@ const SEED_TREATMENTS = [
     discomfort: 'Mild snap sensation (1.5/5)',
     resultsLongevity: '6 to 12 Months with Sunscreen',
     image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://plus.unsplash.com/premium_photo-1702599058912-3874997f5991?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Cheeks & Nose', 'Full Face', 'Chest / Décolletage', 'Shoulders'],
     conditionsTreated: [
       'Facial Erythema & Chronic Rosacea Redness',
@@ -401,7 +401,7 @@ const SEED_TREATMENTS = [
     discomfort: 'Mild with topical anesthetic (2/5)',
     resultsLongevity: '12+ Months',
     image: 'https://plus.unsplash.com/premium_photo-1674841252366-162fc9b8f983?auto=format&fit=crop&w=900&q=80',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1674841252366-162fc9b8f983?auto=format&fit=crop&w=1400&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1400&q=80',
     targetAreas: ['Full Face', 'Under-eye Hollows', 'Neck & Chest', 'Hair Restoration Zones'],
     conditionsTreated: [
       'Delicate Under-Eye Crepiness & Dark Circles',
@@ -432,6 +432,58 @@ const SEED_TREATMENTS = [
       {
         q: 'Is PRP safe?',
         a: 'Because PRP is derived entirely from your own blood, there is virtually zero risk of allergic reaction or cross-reactivity.'
+      }
+    ]
+  },
+  {
+    id: 'polynucleotide-bio-stimulation',
+    name: 'Polynucleotide Cellular Bio-Stimulation',
+    category: 'skin-rejuvenation',
+    categoryName: 'Skin Rejuvenation',
+    tagline: 'Cellular DNA Bio-Polymer Matrix & Under-Eye Repair',
+    shortDescription: 'Ultra-purified salmon DNA nucleotide polymers (PDRN) micro-infused into the dermal matrix to stimulate fibroblast proliferation, repair delicate under-eye hollows, and rebuild collagen density.',
+    fullDescription: 'Our Polynucleotide Cellular Bio-Stimulation utilizes pharmaceutical-grade DNA nucleotide chains (PDRN) to signal cellular regeneration at the deepest dermal layers. Unlike dermal fillers that provide temporary physical volume, polynucleotides physiologically rejuvenate tissue architecture, accelerate micro-vascular circulation, and stimulate native type-I collagen and elastin synthesis without unnatural puffiness or migration.',
+    price: 580,
+    priceFormatted: '₹580 – ₹950',
+    duration: '45 mins',
+    downtime: '12–24 hours (micro-papule resolution)',
+    discomfort: 'Minimal with topical anesthetic (1.5/5)',
+    resultsLongevity: '9 to 12 Months',
+    image: '../assets/images/treatments/polynucleotide-cellular-treatment.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=80',
+    targetAreas: ['Under-Eye Crepiness & Tear Troughs', 'Perioral Fine Lines', 'Full Face Bio-Revitalization', 'Neck & Décolletage Laxity'],
+    conditionsTreated: [
+      'Under-Eye Dark Circles & Skin Thinning',
+      'Loss of Dermal Density & Crepey Skin',
+      'Dehydrated, Stressed Cellular Matrix',
+      'Post-Inflammatory Erythema',
+      'Early Elastosis & Fine Wrinkling'
+    ],
+    procedureOverview: 'Following the application of medical-grade topical anesthetic, purified polynucleotide polymers are administered via micro-papular mesotherapy directly into target dermal planes. The bio-compatible nucleotides immediately activate adenosine A2A receptors, triggering tissue repair, neovascularization, and collagen synthesis.',
+    expectedOutcomes: 'Micro-papules settle within 24 hours. Intrinsic hydration improves within 7–10 days; marked dermal thickening, under-eye brightening, and skin elasticity peak after 3 to 6 weeks.',
+    bestFor: 'Clients seeking natural under-eye brightening, cellular repair, and skin thickening without synthetic filler volume.',
+    benefits: [
+      'Physiologically repairs cellular DNA damage and stimulates fibroblast activity',
+      'Restores dermal thickness and micro-vascular circulation to dark under-eyes',
+      '100% bio-compatible with zero risk of granulomas, tyndall effect, or vascular occlusion',
+      'Smooths delicate crepey skin texture on face, neck, and décolletage'
+    ],
+    preparation: [
+      'Avoid anti-inflammatory supplements (omega-3s, vitamin E, aspirin) for 3 days prior',
+      'Arrive with clean skin free of heavy makeup or active AHA/BHA exfoliants'
+    ],
+    aftercare: [
+      'Allow small micro-droplet injection points to settle naturally over 12–24 hours',
+      'Avoid intense heat, saunas, strenuous exercise, and makeup for 24 hours'
+    ],
+    faqs: [
+      {
+        q: 'How do polynucleotides differ from hyaluronic acid dermal fillers?',
+        a: 'Hyaluronic acid fillers occupy physical space to create temporary volume. Polynucleotides are biological stimulators that instruct your own fibroblasts to synthesize fresh collagen and elastin, truly rejuvenating tissue quality.'
+      },
+      {
+        q: 'How many sessions are recommended for optimal results?',
+        a: 'For maximal dermal density, an initial protocol of 2 to 3 sessions spaced 3 weeks apart is recommended, followed by a maintenance session every 9 to 12 months.'
       }
     ]
   }

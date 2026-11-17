@@ -66,7 +66,7 @@ html {
 .login-brand-tagline {
   display: block;
   margin-top: 0.05rem;
-  color: #787670;
+  color: var(--text-muted);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.5625rem;
   font-weight: 500;
@@ -80,7 +80,7 @@ html {
 }
 
 .dark .login-brand-tagline {
-  color: #9E9C96;
+  color: var(--text-muted);
 }
 
 .navbar-mobile-controls.menu-open {
@@ -239,7 +239,7 @@ html {
 }
 
 .footer-link:hover {
-  color: #C5A880;
+  color: var(--text-accent-gold);
   transform: translateX(2px);
 }
 
@@ -340,7 +340,7 @@ html {
 .site-footer-wordmark-tagline {
   display: block;
   margin-top: 0.05rem;
-  color: #787670;
+  color: var(--text-muted);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.5625rem;
   font-weight: 500;
@@ -360,7 +360,7 @@ html {
 }
 
 .dark .site-footer-wordmark-tagline {
-  color: #9E9C96;
+  color: var(--text-muted);
 }
 
 .site-footer-description {
@@ -436,7 +436,7 @@ html {
 
 .site-footer-heading {
   margin: 0 0 1.25rem;
-  color: #8F7048;
+  color: var(--text-accent-gold);
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.6875rem;
   font-weight: 600;
@@ -491,7 +491,7 @@ html {
 }
 
 .site-footer-link:hover {
-  color: #8F7048;
+  color: var(--text-accent-gold);
   transform: translateX(2px);
 }
 
@@ -671,19 +671,19 @@ html {
   transition: all 0.3s ease;
   background-color: #FAF8F4;
   border: 2px solid #D5CDC0;
-  color: #787670;
+  color: var(--text-muted);
 }
 
 .dark .step-circle {
   background-color: #1F201D;
   border-color: #3F403B;
-  color: #9E9C96;
+  color: var(--text-muted);
 }
 
 .step-item.active .step-circle {
   background-color: #292A27;
   border-color: #C5A880;
-  color: #FFFFFF;
+  color: #FAF8F4;
   box-shadow: 0 0 0 4px rgba(197, 168, 128, 0.2);
 }
 
@@ -697,7 +697,7 @@ html {
 .step-item.completed .step-circle {
   background-color: #C5A880;
   border-color: #C5A880;
-  color: #FFFFFF;
+  color: #292A27;
 }
 
 /* Toast Notifications Container */
@@ -788,7 +788,7 @@ html {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1;
-  color: #C5A880;
+  color: var(--text-accent-gold);
   letter-spacing: -0.025em;
   white-space: nowrap;
   flex-shrink: 0;
@@ -818,7 +818,7 @@ html {
 }
 
 .dark .stat-label {
-  color: #9E9C96;
+  color: var(--text-muted);
 }
 
 /* Luxury Journey Flow Cards */
@@ -840,17 +840,17 @@ html {
 
 /* Watermark Numbers on Journey Flow Cards */
 .journey-step-number {
-  color: rgba(214, 211, 209, 0.75);
+  color: #8E8F8B;
   transition: color 0.3s ease, transform 0.3s ease;
   pointer-events: none;
 }
 
 .dark .journey-step-number {
-  color: rgba(197, 168, 128, 0.35);
+  color: #94938D;
 }
 
 .journey-card:hover .journey-step-number {
-  color: #C5A880;
+  color: var(--text-accent-gold);
 }
 
 .dark .journey-card:hover .journey-step-number {
@@ -900,12 +900,12 @@ html {
   letter-spacing: 0.05em;
   font-family: inherit;
   font-weight: 600;
-  color: #78716c; /* stone-500 */
+  color: var(--text-muted);
   transition: all 0.2s ease;
 }
 
 .dark .dir-btn {
-  color: #a8a29e; /* stone-400 */
+  color: var(--text-muted);
 }
 
 .dir-btn:hover {
@@ -918,7 +918,7 @@ html {
 
 .dir-btn.active {
   background-color: #C5A880 !important; /* aurelle-gold */
-  color: #FFFFFF !important;
+  color: #292A27 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
@@ -1034,15 +1034,16 @@ html {
 }
 
 .treatment-card-ctas {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, 1.5fr);
   align-items: stretch;
-  justify-content: center;
   gap: 0.625rem;
+  width: 100%;
 }
 
 .treatment-card-cta {
   display: flex;
-  flex: 1 1 0%;
+  width: 100%;
   min-width: 0;
   align-items: center;
   justify-content: center;
@@ -1051,6 +1052,10 @@ html {
   font-size: 0.625rem;
   line-height: 1rem;
   letter-spacing: 0.04em;
+}
+
+.treatment-card-cta:first-child {
+  min-width: 7rem;
 }
 
 .treatment-category-grid,
@@ -1133,13 +1138,13 @@ html {
 
 @media (max-width: 399px) {
   .treatment-card-ctas {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: stretch;
   }
 
   .treatment-card-cta {
-    flex: none;
     width: 100%;
+    min-width: 0;
   }
 }
 
@@ -1904,7 +1909,7 @@ html {
 
 .page-hero-quick-pill:hover {
   background: #C5A880;
-  color: #ffffff;
+  color: #292A27;
   border-color: #C5A880;
   transform: translateY(-1px);
 }
@@ -1998,11 +2003,11 @@ html {
   gap: 0.5rem;
   font-size: 0.75rem;
   margin-bottom: 0.875rem;
-  color: #78716c;
+  color: var(--text-muted);
 }
 
 .dark .page-hero-breadcrumb {
-  color: #a8a29e;
+  color: var(--text-muted);
 }
 
 .page-hero-breadcrumb a {
@@ -2010,25 +2015,25 @@ html {
 }
 
 .page-hero-breadcrumb a:hover {
-  color: #C5A880;
+  color: var(--text-accent-gold);
 }
 
 .page-hero-breadcrumb-separator {
-  color: #a8a29e;
+  color: #6D6F69;
   font-size: 0.8125rem;
 }
 
 .dark .page-hero-breadcrumb-separator {
-  color: #57534e;
+  color: #B9B8B1;
 }
 
 .page-hero-breadcrumb-current {
-  color: #292A27;
+  color: var(--text-primary);
   font-weight: 500;
 }
 
 .dark .page-hero-breadcrumb-current {
-  color: #C5A880;
+  color: var(--text-accent-gold);
 }
 
 /* Page Hero Eyebrow Badge */
@@ -2046,14 +2051,14 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: #78716c;
+  color: var(--text-muted);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .dark .page-hero-badge {
   background: rgba(31, 32, 29, 0.85);
   border-color: rgba(68, 64, 60, 0.6);
-  color: #C5A880;
+  color: var(--text-accent-gold);
 }
 
 .page-hero-badge-dot {
@@ -2257,9 +2262,31 @@ html {
   border-color: #E9E0D5;
 }
 
+.btn-secondary.home-cta-secondary {
+  color: #292A27;
+  border-color: #D5CDC0;
+}
+
+.dark .btn-secondary.home-cta-secondary {
+  color: #FAF8F4;
+  border-color: #686963;
+}
+
+.btn-secondary.home-cta-secondary:hover {
+  background-color: transparent;
+  color: #292A27;
+  border-color: #9A7D56;
+}
+
 .dark .btn-secondary:hover {
   background-color: #E9E0D5;
   color: #292A27;
+}
+
+.dark .btn-secondary.home-cta-secondary:hover {
+  background-color: #E9E0D5;
+  color: #292A27;
+  border-color: #E9E0D5;
 }
 
 .btn-gold {

@@ -1,0 +1,53 @@
+import urllib.request
+
+test_ids = [
+    # Lasers / dermatology
+    'photo-1584515979956-d9f6e5d09982',
+    'photo-1519494026892-80bbd2d6fd0d',
+    'photo-1579684385127-1ef15d508118',
+    'photo-1629909613654-28e377c37b09',
+    'photo-1629909615184-74f495363b67',
+    'photo-1507652313519-d4e9174996dd',
+    'photo-1540555700478-4be289fbecef',
+    'photo-1509967419530-da38b4704bc6',
+    'photo-1556228720-195a672e8a03',
+    'photo-1581594693702-fbdc51b2763b',
+    'photo-1512496015851-a90fb38ba796',
+    'photo-1527799820374-dcf8d9d4a388',
+    'photo-1582750433449-648ed127bb54',
+    'photo-1538108149393-fbbd81895907',
+    'photo-1586773860418-d37222d8fce3',
+    'photo-1516549655169-df83a0774514',
+    'photo-1576091160399-112ba8d25d1d',
+    'photo-1576091160550-2173dba999ef',
+    'photo-1532938911079-1b06ac7ceec7',
+    'photo-1758691461957-474a7686e388',
+    'photo-1758691462954-e6fa5005474b',
+    'photo-1746017062285-13c77e29fc25',
+    'photo-1761819920857-7edc5e808fd3',
+    'photo-1761718210089-ba3bb5ccb54f',
+    'photo-1794202219320-9e19cafaefe2',
+    # More premium photos
+    'premium_photo-1661769523136-a6936ba1f519',
+    'premium_photo-1661779386497-1f7b9ec4d8f3',
+    'premium_photo-1683134294916-473fc738750b',
+    'premium_photo-1673953510197-0950d951c6d9',
+    'premium_photo-1661686292786-713ffdf08a9e',
+    'premium_photo-1664475450083-5c9eef17a191',
+    'premium_photo-1661376764850-cd7f326b5a4d',
+    'premium_photo-1661779396815-56fe1ca9877c',
+    'premium_photo-1661580574627-9211124e5c3f',
+    'premium_photo-1682130157004-057c137d96d5',
+    'premium_photo-1682130168752-185b6d96268a',
+    'premium_photo-1663100126765-1ad02ca4ff69',
+    'premium_photo-1664299134229-8a98c99de63b',
+    'premium_photo-1702599058912-3874997f5991',
+    'premium_photo-1674841252366-162fc9b8f983',
+    'premium_photo-1771265141291-d2374cc5d04b',
+    'premium_photo-1661769358914-1d33c22bd7ba',
+    'premium_photo-1661573078797-2126237e4de7',
+    'premium_photo-1661573297404-d558c113a7d8',
+    'premium_photo-1675502957609-25148d769841'
+]
+
+print(f"Total verified IDs in list: {len(test_ids)}")

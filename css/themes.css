@@ -6,7 +6,8 @@
   --bg-tertiary: #F3EFE8;
   --text-primary: #292A27;
   --text-secondary: #5F605C;
-  --text-muted: #8E8F8B;
+  --text-muted: #686A64;
+  --text-accent-gold: #755A38;
   --border-color: #E9E0D5;
   --accent-gold: #C5A880;
   --accent-sage: #A8B5A0;
@@ -19,11 +20,109 @@ html.dark {
   --bg-tertiary: #272825;
   --text-primary: #FAF8F4;
   --text-secondary: #CBC9C3;
-  --text-muted: #94938D;
+  --text-muted: #B9B8B1;
+  --text-accent-gold: #DFC8A8;
   --border-color: #2F302C;
   --accent-gold: #DFC8A8;
   --accent-sage: #B8C4B1;
   --accent-blush: #755B56;
+}
+
+html {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+/* Keep shared muted and gold text readable as the theme changes. */
+.text-aurelle-gold,
+html.dark .text-aurelle-gold,
+.text-aurelle-gold-dark,
+html.dark .text-aurelle-gold-dark,
+html.dark [class~="dark:text-aurelle-gold-light"],
+html:not(.dark) .section-subtitle,
+html.dark .section-subtitle {
+  color: var(--text-accent-gold);
+}
+
+html:not(.dark) [class~="hover:text-aurelle-gold"]:hover,
+html:not(.dark) .group:hover [class~="group-hover:text-aurelle-gold"] {
+  color: var(--text-accent-gold);
+}
+
+html:not(.dark) :is(.bg-stone-900, .bg-aurelle-charcoal) :is(.text-stone-400, .text-stone-500, .text-gray-400, .text-gray-500) {
+  color: #B9B8B1;
+}
+
+html:not(.dark) :is(.bg-stone-900, .bg-aurelle-charcoal, .bg-stone-800) .text-aurelle-gold,
+html:not(.dark) [class~="bg-stone-800/80"].text-aurelle-gold,
+html:not(.dark) .home2-image-portrait .text-aurelle-gold,
+html:not(.dark) .absolute.bottom-3.left-3.right-3.text-white .text-aurelle-gold {
+  color: #DFC8A8;
+}
+
+.text-rose-500 {
+  color: #BE123C;
+}
+
+.text-emerald-500 {
+  color: #047857;
+}
+
+.text-amber-500 {
+  color: #B45309;
+}
+
+html.dark .text-rose-500 {
+  color: #FDA4AF;
+}
+
+html.dark .text-emerald-500 {
+  color: #6EE7B7;
+}
+
+html.dark .text-amber-500 {
+  color: #FBBF24;
+}
+
+.text-stone-400,
+.text-stone-500,
+.text-gray-400,
+.text-gray-500 {
+  color: var(--text-muted);
+}
+
+html.dark .text-stone-400,
+html.dark .text-stone-500,
+html.dark .text-gray-400,
+html.dark .text-gray-500,
+html.dark [class~="dark:text-stone-400"],
+html.dark [class~="dark:text-stone-500"],
+html.dark [class~="dark:text-gray-400"],
+html.dark [class~="dark:text-gray-500"] {
+  color: var(--text-muted);
+}
+
+/* Gold is an accent surface, so its labels use charcoal instead of white. */
+.bg-aurelle-gold.text-white {
+  color: #292A27;
+}
+
+html.dark .btn-gold {
+  color: #292A27;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--text-accent-gold);
 }
 
 /* Smooth transition for theme color switching */
@@ -60,7 +159,7 @@ html.theme-transition *::after {
 
 .dark input::placeholder,
 .dark textarea::placeholder {
-  color: #7D7E79;
+  color: var(--text-muted);
 }
 
 /* Dark mode calendar icon color */
