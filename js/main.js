@@ -21,7 +21,7 @@
     images.forEach(img => {
       img.addEventListener('error', function () {
         // Fallback placeholder if any remote image is unreachable
-        this.src = 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80';
+        this.src = 'https://images.pexels.com/photos/16571735/pexels-photo-16571735.jpeg?auto=compress&cs=tinysrgb&w=800';
       });
     });
 
